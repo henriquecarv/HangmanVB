@@ -36,14 +36,17 @@ Partial Class CategoryandDifficult
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
         Me.ComboBox1.TabIndex = 0
+        Me.ComboBox1.Text = "Select category"
         '
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Easy", "Medium", "Hard"})
         Me.ComboBox2.Location = New System.Drawing.Point(200, 209)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 24)
         Me.ComboBox2.TabIndex = 1
+        Me.ComboBox2.Text = "Select difficuty "
         '
         'Label1
         '
