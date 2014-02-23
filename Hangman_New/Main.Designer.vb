@@ -32,11 +32,11 @@ Partial Class Main
         'txtboxInstrutions
         '
         Me.txtboxInstrutions.AccessibleName = "txtboxInstructions"
-        Me.txtboxInstrutions.Location = New System.Drawing.Point(56, 211)
+        Me.txtboxInstrutions.Location = New System.Drawing.Point(45, 237)
         Me.txtboxInstrutions.Multiline = True
         Me.txtboxInstrutions.Name = "txtboxInstrutions"
         Me.txtboxInstrutions.Size = New System.Drawing.Size(373, 124)
-        Me.txtboxInstrutions.TabIndex = 7
+        Me.txtboxInstrutions.TabIndex = 11
         Me.txtboxInstrutions.Text = resources.GetString("txtboxInstrutions.Text")
         '
         'lblWelcome
@@ -44,20 +44,20 @@ Partial Class Main
         Me.lblWelcome.AccessibleName = "lblWelcome"
         Me.lblWelcome.AutoSize = True
         Me.lblWelcome.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWelcome.Location = New System.Drawing.Point(181, 162)
+        Me.lblWelcome.Location = New System.Drawing.Point(170, 188)
         Me.lblWelcome.Name = "lblWelcome"
         Me.lblWelcome.Size = New System.Drawing.Size(126, 31)
-        Me.lblWelcome.TabIndex = 6
+        Me.lblWelcome.TabIndex = 10
         Me.lblWelcome.Text = "Welcome"
         '
         'btnStart
         '
         Me.btnStart.AccessibleName = ""
         Me.btnStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStart.Location = New System.Drawing.Point(502, 292)
+        Me.btnStart.Location = New System.Drawing.Point(491, 318)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(107, 43)
-        Me.btnStart.TabIndex = 5
+        Me.btnStart.TabIndex = 9
         Me.btnStart.Text = "Start"
         Me.btnStart.UseVisualStyleBackColor = True
         '
@@ -66,22 +66,22 @@ Partial Class Main
         Me.lblHangman.AccessibleName = "lblTitle"
         Me.lblHangman.AutoSize = True
         Me.lblHangman.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHangman.Location = New System.Drawing.Point(249, 22)
+        Me.lblHangman.Location = New System.Drawing.Point(238, 48)
         Me.lblHangman.Name = "lblHangman"
         Me.lblHangman.Size = New System.Drawing.Size(180, 42)
-        Me.lblHangman.TabIndex = 4
+        Me.lblHangman.TabIndex = 8
         Me.lblHangman.Text = "Hangman"
         '
-        'Main_New
+        'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(664, 356)
+        Me.ClientSize = New System.Drawing.Size(650, 414)
         Me.Controls.Add(Me.txtboxInstrutions)
         Me.Controls.Add(Me.lblWelcome)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.lblHangman)
-        Me.Name = "Main_New"
+        Me.Name = "Main"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -91,4 +91,5 @@ Partial Class Main
     Friend WithEvents lblWelcome As System.Windows.Forms.Label
     Friend WithEvents btnStart As System.Windows.Forms.Button
     Friend WithEvents lblHangman As System.Windows.Forms.Label
+
 End Class
