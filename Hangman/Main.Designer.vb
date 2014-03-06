@@ -23,72 +23,93 @@ Partial Class Main
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
-        Me.txtboxInstrutions = New System.Windows.Forms.TextBox()
-        Me.lblWelcome = New System.Windows.Forms.Label()
+        Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnStart = New System.Windows.Forms.Button()
-        Me.lblHangman = New System.Windows.Forms.Label()
+        Me.lblWelcome = New System.Windows.Forms.Label()
+        Me.txtInstructions = New System.Windows.Forms.TextBox()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'txtboxInstrutions
+        'lblTitle
         '
-        Me.txtboxInstrutions.AccessibleName = "txtboxInstructions"
-        Me.txtboxInstrutions.Location = New System.Drawing.Point(56, 211)
-        Me.txtboxInstrutions.Multiline = True
-        Me.txtboxInstrutions.Name = "txtboxInstrutions"
-        Me.txtboxInstrutions.Size = New System.Drawing.Size(373, 124)
-        Me.txtboxInstrutions.TabIndex = 7
-        Me.txtboxInstrutions.Text = resources.GetString("txtboxInstrutions.Text")
+        Me.lblTitle.AccessibleName = "lblTitle"
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Location = New System.Drawing.Point(240, 30)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(180, 42)
+        Me.lblTitle.TabIndex = 0
+        Me.lblTitle.Text = "Hangman"
+        '
+        'btnStart
+        '
+        Me.btnStart.AccessibleName = "btnStart"
+        Me.btnStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStart.Location = New System.Drawing.Point(493, 299)
+        Me.btnStart.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(107, 43)
+        Me.btnStart.TabIndex = 1
+        Me.btnStart.Text = "Start"
+        Me.btnStart.UseVisualStyleBackColor = True
         '
         'lblWelcome
         '
         Me.lblWelcome.AccessibleName = "lblWelcome"
         Me.lblWelcome.AutoSize = True
         Me.lblWelcome.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWelcome.Location = New System.Drawing.Point(181, 162)
+        Me.lblWelcome.Location = New System.Drawing.Point(172, 169)
         Me.lblWelcome.Name = "lblWelcome"
         Me.lblWelcome.Size = New System.Drawing.Size(126, 31)
-        Me.lblWelcome.TabIndex = 6
+        Me.lblWelcome.TabIndex = 2
         Me.lblWelcome.Text = "Welcome"
         '
-        'btnStart
+        'txtInstructions
         '
-        Me.btnStart.AccessibleName = ""
-        Me.btnStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStart.Location = New System.Drawing.Point(502, 292)
-        Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(107, 43)
-        Me.btnStart.TabIndex = 5
-        Me.btnStart.Text = "Start"
-        Me.btnStart.UseVisualStyleBackColor = True
+        Me.txtInstructions.AccessibleName = "txtboxInstructions"
+        Me.txtInstructions.Location = New System.Drawing.Point(47, 262)
+        Me.txtInstructions.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtInstructions.Multiline = True
+        Me.txtInstructions.Name = "txtInstructions"
+        Me.txtInstructions.Size = New System.Drawing.Size(373, 125)
+        Me.txtInstructions.TabIndex = 3
+        Me.txtInstructions.Text = "" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "       Instructions"
         '
-        'lblHangman
+        'btnExit
         '
-        Me.lblHangman.AccessibleName = "lblTitle"
-        Me.lblHangman.AutoSize = True
-        Me.lblHangman.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHangman.Location = New System.Drawing.Point(249, 22)
-        Me.lblHangman.Name = "lblHangman"
-        Me.lblHangman.Size = New System.Drawing.Size(180, 42)
-        Me.lblHangman.TabIndex = 4
-        Me.lblHangman.Text = "Hangman"
+        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Location = New System.Drawing.Point(493, 215)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(107, 46)
+        Me.btnExit.TabIndex = 4
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
-        'Main_New
+        'Main
         '
+        Me.AccessibleName = "formMain"
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(664, 356)
-        Me.Controls.Add(Me.txtboxInstrutions)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(641, 476)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.txtInstructions)
         Me.Controls.Add(Me.lblWelcome)
         Me.Controls.Add(Me.btnStart)
-        Me.Controls.Add(Me.lblHangman)
-        Me.Name = "Main_New"
-        Me.Text = "Form1"
+        Me.Controls.Add(Me.lblTitle)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Name = "Main"
+        Me.Text = "Hangman"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txtboxInstrutions As System.Windows.Forms.TextBox
-    Friend WithEvents lblWelcome As System.Windows.Forms.Label
+    Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents btnStart As System.Windows.Forms.Button
-    Friend WithEvents lblHangman As System.Windows.Forms.Label
+    Friend WithEvents lblWelcome As System.Windows.Forms.Label
+    Friend WithEvents txtInstructions As System.Windows.Forms.TextBox
+    Friend WithEvents btnExit As System.Windows.Forms.Button
+
 End Class

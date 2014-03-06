@@ -23,701 +23,746 @@ Partial Class Game
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Game))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button28 = New System.Windows.Forms.Button()
-        Me.Button27 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button34 = New System.Windows.Forms.Button()
-        Me.Button33 = New System.Windows.Forms.Button()
-        Me.Button32 = New System.Windows.Forms.Button()
-        Me.Button31 = New System.Windows.Forms.Button()
-        Me.Button30 = New System.Windows.Forms.Button()
-        Me.Button29 = New System.Windows.Forms.Button()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button26 = New System.Windows.Forms.Button()
-        Me.Button25 = New System.Windows.Forms.Button()
-        Me.Button24 = New System.Windows.Forms.Button()
-        Me.Button23 = New System.Windows.Forms.Button()
-        Me.Button22 = New System.Windows.Forms.Button()
-        Me.Button21 = New System.Windows.Forms.Button()
-        Me.Button20 = New System.Windows.Forms.Button()
-        Me.Button19 = New System.Windows.Forms.Button()
-        Me.Button18 = New System.Windows.Forms.Button()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnA = New System.Windows.Forms.Button
+        Me.txtWrongGuesses = New System.Windows.Forms.TextBox
+        Me.lblWrongGuesses = New System.Windows.Forms.Label
+        Me.lblLetters = New System.Windows.Forms.Label
+        Me.lblDifficult = New System.Windows.Forms.Label
+        Me.cmbDifficult = New System.Windows.Forms.ComboBox
+        Me.cmbCategory = New System.Windows.Forms.ComboBox
+        Me.lblCategory = New System.Windows.Forms.Label
+        Me.btnRestart = New System.Windows.Forms.Button
+        Me.btnExit = New System.Windows.Forms.Button
+        Me.lblLetter1 = New System.Windows.Forms.Label
+        Me.lblLetter3 = New System.Windows.Forms.Label
+        Me.lblLetter2 = New System.Windows.Forms.Label
+        Me.lblLetter4 = New System.Windows.Forms.Label
+        Me.lblLetter5 = New System.Windows.Forms.Label
+        Me.lblLetter6 = New System.Windows.Forms.Label
+        Me.btnPosition1 = New System.Windows.Forms.Button
+        Me.btnPosition2 = New System.Windows.Forms.Button
+        Me.btnPosition3 = New System.Windows.Forms.Button
+        Me.btnPosition4 = New System.Windows.Forms.Button
+        Me.btnPosition5 = New System.Windows.Forms.Button
+        Me.btnPosition6 = New System.Windows.Forms.Button
+        Me.picImage = New System.Windows.Forms.PictureBox
+        Me.btnM = New System.Windows.Forms.Button
+        Me.btnL = New System.Windows.Forms.Button
+        Me.btnK = New System.Windows.Forms.Button
+        Me.btnJ = New System.Windows.Forms.Button
+        Me.btnI = New System.Windows.Forms.Button
+        Me.btnH = New System.Windows.Forms.Button
+        Me.btnG = New System.Windows.Forms.Button
+        Me.btnF = New System.Windows.Forms.Button
+        Me.btnE = New System.Windows.Forms.Button
+        Me.btnD = New System.Windows.Forms.Button
+        Me.btnC = New System.Windows.Forms.Button
+        Me.btnB = New System.Windows.Forms.Button
+        Me.btnO = New System.Windows.Forms.Button
+        Me.btnP = New System.Windows.Forms.Button
+        Me.btnQ = New System.Windows.Forms.Button
+        Me.btnR = New System.Windows.Forms.Button
+        Me.btnS = New System.Windows.Forms.Button
+        Me.btnT = New System.Windows.Forms.Button
+        Me.btnU = New System.Windows.Forms.Button
+        Me.btnV = New System.Windows.Forms.Button
+        Me.btnW = New System.Windows.Forms.Button
+        Me.btnX = New System.Windows.Forms.Button
+        Me.btnY = New System.Windows.Forms.Button
+        Me.btnZ = New System.Windows.Forms.Button
+        Me.btnN = New System.Windows.Forms.Button
+        Me.lblRemaining = New System.Windows.Forms.Label
+        Me.lblCountRem = New System.Windows.Forms.Label
+        Me.TextBox1 = New System.Windows.Forms.TextBox
+        CType(Me.picImage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'btnA
         '
-        Me.PictureBox1.AccessibleName = "picture1"
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(39, 29)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(412, 238)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 56
-        Me.PictureBox1.TabStop = False
+        Me.btnA.AccessibleName = ""
+        Me.btnA.Location = New System.Drawing.Point(27, 362)
+        Me.btnA.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnA.Name = "btnA"
+        Me.btnA.Size = New System.Drawing.Size(38, 34)
+        Me.btnA.TabIndex = 0
+        Me.btnA.Text = "A"
+        Me.btnA.UseVisualStyleBackColor = True
         '
-        'Button28
+        'txtWrongGuesses
         '
-        Me.Button28.AccessibleName = "btnExit"
-        Me.Button28.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button28.Location = New System.Drawing.Point(609, 395)
-        Me.Button28.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button28.Name = "Button28"
-        Me.Button28.Size = New System.Drawing.Size(79, 34)
-        Me.Button28.TabIndex = 64
-        Me.Button28.Text = "Exit"
-        Me.Button28.UseVisualStyleBackColor = True
+        Me.txtWrongGuesses.AccessibleName = "txtBoxWrong"
+        Me.txtWrongGuesses.Location = New System.Drawing.Point(691, 226)
+        Me.txtWrongGuesses.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtWrongGuesses.Multiline = True
+        Me.txtWrongGuesses.Name = "txtWrongGuesses"
+        Me.txtWrongGuesses.Size = New System.Drawing.Size(150, 166)
+        Me.txtWrongGuesses.TabIndex = 34
         '
-        'Button27
+        'lblWrongGuesses
         '
-        Me.Button27.AccessibleName = "btnRestart"
-        Me.Button27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button27.Location = New System.Drawing.Point(713, 395)
-        Me.Button27.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button27.Name = "Button27"
-        Me.Button27.Size = New System.Drawing.Size(95, 36)
-        Me.Button27.TabIndex = 63
-        Me.Button27.Text = "Restart"
-        Me.Button27.UseVisualStyleBackColor = True
+        Me.lblWrongGuesses.AccessibleName = "lblWordsGuessed"
+        Me.lblWrongGuesses.AutoSize = True
+        Me.lblWrongGuesses.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWrongGuesses.Location = New System.Drawing.Point(707, 204)
+        Me.lblWrongGuesses.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblWrongGuesses.Name = "lblWrongGuesses"
+        Me.lblWrongGuesses.Size = New System.Drawing.Size(124, 20)
+        Me.lblWrongGuesses.TabIndex = 35
+        Me.lblWrongGuesses.Text = "Wrong Guesses"
         '
-        'Label4
+        'lblLetters
         '
-        Me.Label4.AccessibleName = "lblCategory"
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(631, 89)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(69, 17)
-        Me.Label4.TabIndex = 62
-        Me.Label4.Text = "Category:"
+        Me.lblLetters.AccessibleName = "lblLetters"
+        Me.lblLetters.AutoSize = True
+        Me.lblLetters.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetters.Location = New System.Drawing.Point(24, 318)
+        Me.lblLetters.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLetters.Name = "lblLetters"
+        Me.lblLetters.Size = New System.Drawing.Size(53, 18)
+        Me.lblLetters.TabIndex = 36
+        Me.lblLetters.Text = "Letters"
         '
-        'ComboBox2
+        'lblDifficult
         '
-        Me.ComboBox2.AccessibleName = "comboBoxCategory"
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(701, 86)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox2.TabIndex = 61
+        Me.lblDifficult.AccessibleName = "lblDifficult"
+        Me.lblDifficult.AutoSize = True
+        Me.lblDifficult.Location = New System.Drawing.Point(690, 28)
+        Me.lblDifficult.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblDifficult.Name = "lblDifficult"
+        Me.lblDifficult.Size = New System.Drawing.Size(53, 13)
+        Me.lblDifficult.TabIndex = 37
+        Me.lblDifficult.Text = "Difficulty: "
         '
-        'ComboBox1
+        'cmbDifficult
         '
-        Me.ComboBox1.AccessibleName = "comboBoxDifficult"
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(701, 29)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox1.TabIndex = 60
+        Me.cmbDifficult.AccessibleName = "comboBoxDifficult"
+        Me.cmbDifficult.FormattingEnabled = True
+        Me.cmbDifficult.Items.AddRange(New Object() {"Easy", "Medium", "Hard"})
+        Me.cmbDifficult.Location = New System.Drawing.Point(742, 28)
+        Me.cmbDifficult.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmbDifficult.Name = "cmbDifficult"
+        Me.cmbDifficult.Size = New System.Drawing.Size(92, 21)
+        Me.cmbDifficult.TabIndex = 38
         '
-        'Label3
+        'cmbCategory
         '
-        Me.Label3.AccessibleName = "lblDifficult"
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(631, 29)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(62, 17)
-        Me.Label3.TabIndex = 59
-        Me.Label3.Text = "Difficult: "
+        Me.cmbCategory.AccessibleName = "comboBoxCategory"
+        Me.cmbCategory.FormattingEnabled = True
+        Me.cmbCategory.Location = New System.Drawing.Point(742, 74)
+        Me.cmbCategory.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmbCategory.Name = "cmbCategory"
+        Me.cmbCategory.Size = New System.Drawing.Size(92, 21)
+        Me.cmbCategory.TabIndex = 39
         '
-        'Label1
+        'lblCategory
         '
-        Me.Label1.AccessibleName = "lblWordsGuessed"
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(628, 181)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(169, 25)
-        Me.Label1.TabIndex = 58
-        Me.Label1.Text = "Wrong Guesses..."
+        Me.lblCategory.AccessibleName = "lblCategory"
+        Me.lblCategory.AutoSize = True
+        Me.lblCategory.Location = New System.Drawing.Point(690, 76)
+        Me.lblCategory.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblCategory.Name = "lblCategory"
+        Me.lblCategory.Size = New System.Drawing.Size(52, 13)
+        Me.lblCategory.TabIndex = 40
+        Me.lblCategory.Text = "Category:"
+        '
+        'btnRestart
+        '
+        Me.btnRestart.AccessibleName = "btnRestart"
+        Me.btnRestart.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRestart.Location = New System.Drawing.Point(770, 440)
+        Me.btnRestart.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnRestart.Name = "btnRestart"
+        Me.btnRestart.Size = New System.Drawing.Size(71, 29)
+        Me.btnRestart.TabIndex = 41
+        Me.btnRestart.Text = "Restart"
+        Me.btnRestart.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.AccessibleName = "btnExit"
+        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Location = New System.Drawing.Point(692, 440)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(59, 28)
+        Me.btnExit.TabIndex = 42
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'lblLetter1
+        '
+        Me.lblLetter1.AccessibleName = "lblLetter1"
+        Me.lblLetter1.AutoSize = True
+        Me.lblLetter1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetter1.Location = New System.Drawing.Point(38, 244)
+        Me.lblLetter1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLetter1.Name = "lblLetter1"
+        Me.lblLetter1.Size = New System.Drawing.Size(0, 29)
+        Me.lblLetter1.TabIndex = 43
+        '
+        'lblLetter3
+        '
+        Me.lblLetter3.AccessibleName = "lblLetter3"
+        Me.lblLetter3.AutoSize = True
+        Me.lblLetter3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetter3.Location = New System.Drawing.Point(116, 244)
+        Me.lblLetter3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLetter3.Name = "lblLetter3"
+        Me.lblLetter3.Size = New System.Drawing.Size(0, 29)
+        Me.lblLetter3.TabIndex = 44
+        '
+        'lblLetter2
+        '
+        Me.lblLetter2.AccessibleName = "lblLetter2"
+        Me.lblLetter2.AutoSize = True
+        Me.lblLetter2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetter2.Location = New System.Drawing.Point(78, 244)
+        Me.lblLetter2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLetter2.Name = "lblLetter2"
+        Me.lblLetter2.Size = New System.Drawing.Size(0, 29)
+        Me.lblLetter2.TabIndex = 45
+        '
+        'lblLetter4
+        '
+        Me.lblLetter4.AccessibleName = "lblLetter4"
+        Me.lblLetter4.AutoSize = True
+        Me.lblLetter4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetter4.Location = New System.Drawing.Point(156, 244)
+        Me.lblLetter4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLetter4.Name = "lblLetter4"
+        Me.lblLetter4.Size = New System.Drawing.Size(0, 29)
+        Me.lblLetter4.TabIndex = 46
+        '
+        'lblLetter5
+        '
+        Me.lblLetter5.AccessibleName = "lblLetter5"
+        Me.lblLetter5.AutoSize = True
+        Me.lblLetter5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetter5.Location = New System.Drawing.Point(194, 244)
+        Me.lblLetter5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLetter5.Name = "lblLetter5"
+        Me.lblLetter5.Size = New System.Drawing.Size(0, 29)
+        Me.lblLetter5.TabIndex = 47
+        '
+        'lblLetter6
+        '
+        Me.lblLetter6.AccessibleName = "lblLetter6"
+        Me.lblLetter6.AutoSize = True
+        Me.lblLetter6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLetter6.Location = New System.Drawing.Point(234, 244)
+        Me.lblLetter6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLetter6.Name = "lblLetter6"
+        Me.lblLetter6.Size = New System.Drawing.Size(0, 29)
+        Me.lblLetter6.TabIndex = 48
+        '
+        'btnPosition1
+        '
+        Me.btnPosition1.AccessibleName = "btnPosition1"
+        Me.btnPosition1.Enabled = False
+        Me.btnPosition1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPosition1.Location = New System.Drawing.Point(30, 275)
+        Me.btnPosition1.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnPosition1.Name = "btnPosition1"
+        Me.btnPosition1.Size = New System.Drawing.Size(36, 2)
+        Me.btnPosition1.TabIndex = 49
+        Me.btnPosition1.Text = "Button29"
+        Me.btnPosition1.UseVisualStyleBackColor = True
+        '
+        'btnPosition2
+        '
+        Me.btnPosition2.AccessibleName = "btnPosition2"
+        Me.btnPosition2.Enabled = False
+        Me.btnPosition2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPosition2.Location = New System.Drawing.Point(68, 275)
+        Me.btnPosition2.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnPosition2.Name = "btnPosition2"
+        Me.btnPosition2.Size = New System.Drawing.Size(36, 2)
+        Me.btnPosition2.TabIndex = 50
+        Me.btnPosition2.Text = "Button30"
+        Me.btnPosition2.UseVisualStyleBackColor = True
+        '
+        'btnPosition3
+        '
+        Me.btnPosition3.AccessibleName = "btnPosition3"
+        Me.btnPosition3.Enabled = False
+        Me.btnPosition3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPosition3.Location = New System.Drawing.Point(108, 275)
+        Me.btnPosition3.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnPosition3.Name = "btnPosition3"
+        Me.btnPosition3.Size = New System.Drawing.Size(36, 2)
+        Me.btnPosition3.TabIndex = 51
+        Me.btnPosition3.Text = "Button31"
+        Me.btnPosition3.UseVisualStyleBackColor = True
+        '
+        'btnPosition4
+        '
+        Me.btnPosition4.AccessibleName = "btnPosition4"
+        Me.btnPosition4.Enabled = False
+        Me.btnPosition4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPosition4.Location = New System.Drawing.Point(146, 275)
+        Me.btnPosition4.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnPosition4.Name = "btnPosition4"
+        Me.btnPosition4.Size = New System.Drawing.Size(36, 2)
+        Me.btnPosition4.TabIndex = 52
+        Me.btnPosition4.Text = "Button32"
+        Me.btnPosition4.UseVisualStyleBackColor = True
+        '
+        'btnPosition5
+        '
+        Me.btnPosition5.AccessibleName = "btnPosition5"
+        Me.btnPosition5.Enabled = False
+        Me.btnPosition5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPosition5.Location = New System.Drawing.Point(186, 275)
+        Me.btnPosition5.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnPosition5.Name = "btnPosition5"
+        Me.btnPosition5.Size = New System.Drawing.Size(36, 2)
+        Me.btnPosition5.TabIndex = 53
+        Me.btnPosition5.Text = "Button33"
+        Me.btnPosition5.UseVisualStyleBackColor = True
+        '
+        'btnPosition6
+        '
+        Me.btnPosition6.AccessibleName = "btnPosition6"
+        Me.btnPosition6.Enabled = False
+        Me.btnPosition6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPosition6.Location = New System.Drawing.Point(226, 275)
+        Me.btnPosition6.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnPosition6.Name = "btnPosition6"
+        Me.btnPosition6.Size = New System.Drawing.Size(36, 2)
+        Me.btnPosition6.TabIndex = 54
+        Me.btnPosition6.Text = "Button34"
+        Me.btnPosition6.UseVisualStyleBackColor = True
+        '
+        'picImage
+        '
+        Me.picImage.AccessibleName = "picture1"
+        Me.picImage.Image = CType(resources.GetObject("picImage.Image"), System.Drawing.Image)
+        Me.picImage.Location = New System.Drawing.Point(27, 20)
+        Me.picImage.Margin = New System.Windows.Forms.Padding(2)
+        Me.picImage.Name = "picImage"
+        Me.picImage.Size = New System.Drawing.Size(562, 193)
+        Me.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picImage.TabIndex = 55
+        Me.picImage.TabStop = False
+        '
+        'btnM
+        '
+        Me.btnM.AccessibleName = ""
+        Me.btnM.Location = New System.Drawing.Point(531, 362)
+        Me.btnM.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnM.Name = "btnM"
+        Me.btnM.Size = New System.Drawing.Size(38, 34)
+        Me.btnM.TabIndex = 56
+        Me.btnM.Text = "M"
+        Me.btnM.UseVisualStyleBackColor = True
+        '
+        'btnL
+        '
+        Me.btnL.AccessibleName = ""
+        Me.btnL.Location = New System.Drawing.Point(489, 362)
+        Me.btnL.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnL.Name = "btnL"
+        Me.btnL.Size = New System.Drawing.Size(38, 34)
+        Me.btnL.TabIndex = 57
+        Me.btnL.Text = "L"
+        Me.btnL.UseVisualStyleBackColor = True
+        '
+        'btnK
+        '
+        Me.btnK.AccessibleName = ""
+        Me.btnK.Location = New System.Drawing.Point(447, 362)
+        Me.btnK.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnK.Name = "btnK"
+        Me.btnK.Size = New System.Drawing.Size(38, 34)
+        Me.btnK.TabIndex = 58
+        Me.btnK.Text = "K"
+        Me.btnK.UseVisualStyleBackColor = True
+        '
+        'btnJ
+        '
+        Me.btnJ.AccessibleName = ""
+        Me.btnJ.Location = New System.Drawing.Point(405, 362)
+        Me.btnJ.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnJ.Name = "btnJ"
+        Me.btnJ.Size = New System.Drawing.Size(38, 34)
+        Me.btnJ.TabIndex = 59
+        Me.btnJ.Text = "J"
+        Me.btnJ.UseVisualStyleBackColor = True
+        '
+        'btnI
+        '
+        Me.btnI.AccessibleName = ""
+        Me.btnI.Location = New System.Drawing.Point(363, 362)
+        Me.btnI.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnI.Name = "btnI"
+        Me.btnI.Size = New System.Drawing.Size(38, 34)
+        Me.btnI.TabIndex = 60
+        Me.btnI.Text = "I"
+        Me.btnI.UseVisualStyleBackColor = True
+        '
+        'btnH
+        '
+        Me.btnH.AccessibleName = ""
+        Me.btnH.Location = New System.Drawing.Point(321, 362)
+        Me.btnH.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnH.Name = "btnH"
+        Me.btnH.Size = New System.Drawing.Size(38, 34)
+        Me.btnH.TabIndex = 61
+        Me.btnH.Text = "H"
+        Me.btnH.UseVisualStyleBackColor = True
+        '
+        'btnG
+        '
+        Me.btnG.AccessibleName = ""
+        Me.btnG.Location = New System.Drawing.Point(279, 362)
+        Me.btnG.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnG.Name = "btnG"
+        Me.btnG.Size = New System.Drawing.Size(38, 34)
+        Me.btnG.TabIndex = 62
+        Me.btnG.Text = "G"
+        Me.btnG.UseVisualStyleBackColor = True
+        '
+        'btnF
+        '
+        Me.btnF.AccessibleName = ""
+        Me.btnF.Location = New System.Drawing.Point(237, 362)
+        Me.btnF.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnF.Name = "btnF"
+        Me.btnF.Size = New System.Drawing.Size(38, 34)
+        Me.btnF.TabIndex = 63
+        Me.btnF.Text = "F"
+        Me.btnF.UseVisualStyleBackColor = True
+        '
+        'btnE
+        '
+        Me.btnE.AccessibleName = ""
+        Me.btnE.Location = New System.Drawing.Point(195, 362)
+        Me.btnE.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnE.Name = "btnE"
+        Me.btnE.Size = New System.Drawing.Size(38, 34)
+        Me.btnE.TabIndex = 64
+        Me.btnE.Text = "E"
+        Me.btnE.UseVisualStyleBackColor = True
+        '
+        'btnD
+        '
+        Me.btnD.AccessibleName = ""
+        Me.btnD.Location = New System.Drawing.Point(153, 362)
+        Me.btnD.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnD.Name = "btnD"
+        Me.btnD.Size = New System.Drawing.Size(38, 34)
+        Me.btnD.TabIndex = 65
+        Me.btnD.Text = "D"
+        Me.btnD.UseVisualStyleBackColor = True
+        '
+        'btnC
+        '
+        Me.btnC.AccessibleName = ""
+        Me.btnC.Location = New System.Drawing.Point(111, 362)
+        Me.btnC.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnC.Name = "btnC"
+        Me.btnC.Size = New System.Drawing.Size(38, 34)
+        Me.btnC.TabIndex = 66
+        Me.btnC.Text = "C"
+        Me.btnC.UseVisualStyleBackColor = True
+        '
+        'btnB
+        '
+        Me.btnB.AccessibleName = "btnB"
+        Me.btnB.Location = New System.Drawing.Point(69, 362)
+        Me.btnB.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnB.Name = "btnB"
+        Me.btnB.Size = New System.Drawing.Size(38, 34)
+        Me.btnB.TabIndex = 67
+        Me.btnB.Text = "B"
+        Me.btnB.UseVisualStyleBackColor = True
+        '
+        'btnO
+        '
+        Me.btnO.AccessibleName = ""
+        Me.btnO.Location = New System.Drawing.Point(69, 439)
+        Me.btnO.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnO.Name = "btnO"
+        Me.btnO.Size = New System.Drawing.Size(38, 34)
+        Me.btnO.TabIndex = 80
+        Me.btnO.Text = "O"
+        Me.btnO.UseVisualStyleBackColor = True
+        '
+        'btnP
+        '
+        Me.btnP.AccessibleName = ""
+        Me.btnP.Location = New System.Drawing.Point(111, 439)
+        Me.btnP.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnP.Name = "btnP"
+        Me.btnP.Size = New System.Drawing.Size(38, 34)
+        Me.btnP.TabIndex = 79
+        Me.btnP.Text = "P"
+        Me.btnP.UseVisualStyleBackColor = True
+        '
+        'btnQ
+        '
+        Me.btnQ.AccessibleName = ""
+        Me.btnQ.Location = New System.Drawing.Point(153, 439)
+        Me.btnQ.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnQ.Name = "btnQ"
+        Me.btnQ.Size = New System.Drawing.Size(38, 34)
+        Me.btnQ.TabIndex = 78
+        Me.btnQ.Text = "Q"
+        Me.btnQ.UseVisualStyleBackColor = True
+        '
+        'btnR
+        '
+        Me.btnR.AccessibleName = ""
+        Me.btnR.Location = New System.Drawing.Point(195, 439)
+        Me.btnR.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnR.Name = "btnR"
+        Me.btnR.Size = New System.Drawing.Size(38, 34)
+        Me.btnR.TabIndex = 77
+        Me.btnR.Text = "R"
+        Me.btnR.UseVisualStyleBackColor = True
+        '
+        'btnS
+        '
+        Me.btnS.AccessibleName = ""
+        Me.btnS.Location = New System.Drawing.Point(237, 439)
+        Me.btnS.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnS.Name = "btnS"
+        Me.btnS.Size = New System.Drawing.Size(38, 34)
+        Me.btnS.TabIndex = 76
+        Me.btnS.Text = "S"
+        Me.btnS.UseVisualStyleBackColor = True
+        '
+        'btnT
+        '
+        Me.btnT.AccessibleName = ""
+        Me.btnT.Location = New System.Drawing.Point(279, 439)
+        Me.btnT.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnT.Name = "btnT"
+        Me.btnT.Size = New System.Drawing.Size(38, 34)
+        Me.btnT.TabIndex = 75
+        Me.btnT.Text = "T"
+        Me.btnT.UseVisualStyleBackColor = True
+        '
+        'btnU
+        '
+        Me.btnU.AccessibleName = ""
+        Me.btnU.Location = New System.Drawing.Point(321, 439)
+        Me.btnU.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnU.Name = "btnU"
+        Me.btnU.Size = New System.Drawing.Size(38, 34)
+        Me.btnU.TabIndex = 74
+        Me.btnU.Text = "U"
+        Me.btnU.UseVisualStyleBackColor = True
+        '
+        'btnV
+        '
+        Me.btnV.AccessibleName = ""
+        Me.btnV.Location = New System.Drawing.Point(363, 439)
+        Me.btnV.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnV.Name = "btnV"
+        Me.btnV.Size = New System.Drawing.Size(38, 34)
+        Me.btnV.TabIndex = 73
+        Me.btnV.Text = "V"
+        Me.btnV.UseVisualStyleBackColor = True
+        '
+        'btnW
+        '
+        Me.btnW.AccessibleName = ""
+        Me.btnW.Location = New System.Drawing.Point(405, 439)
+        Me.btnW.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnW.Name = "btnW"
+        Me.btnW.Size = New System.Drawing.Size(38, 34)
+        Me.btnW.TabIndex = 72
+        Me.btnW.Text = "W"
+        Me.btnW.UseVisualStyleBackColor = True
+        '
+        'btnX
+        '
+        Me.btnX.AccessibleName = ""
+        Me.btnX.Location = New System.Drawing.Point(447, 439)
+        Me.btnX.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnX.Name = "btnX"
+        Me.btnX.Size = New System.Drawing.Size(38, 34)
+        Me.btnX.TabIndex = 71
+        Me.btnX.Text = "X"
+        Me.btnX.UseVisualStyleBackColor = True
+        '
+        'btnY
+        '
+        Me.btnY.AccessibleName = ""
+        Me.btnY.Location = New System.Drawing.Point(489, 439)
+        Me.btnY.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnY.Name = "btnY"
+        Me.btnY.Size = New System.Drawing.Size(38, 34)
+        Me.btnY.TabIndex = 70
+        Me.btnY.Text = "Y"
+        Me.btnY.UseVisualStyleBackColor = True
+        '
+        'btnZ
+        '
+        Me.btnZ.AccessibleName = ""
+        Me.btnZ.Location = New System.Drawing.Point(531, 439)
+        Me.btnZ.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnZ.Name = "btnZ"
+        Me.btnZ.Size = New System.Drawing.Size(38, 34)
+        Me.btnZ.TabIndex = 69
+        Me.btnZ.Text = "Z"
+        Me.btnZ.UseVisualStyleBackColor = True
+        '
+        'btnN
+        '
+        Me.btnN.AccessibleName = ""
+        Me.btnN.Location = New System.Drawing.Point(27, 438)
+        Me.btnN.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnN.Name = "btnN"
+        Me.btnN.Size = New System.Drawing.Size(38, 34)
+        Me.btnN.TabIndex = 68
+        Me.btnN.Text = "N"
+        Me.btnN.UseVisualStyleBackColor = True
+        '
+        'lblRemaining
+        '
+        Me.lblRemaining.AutoSize = True
+        Me.lblRemaining.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRemaining.Location = New System.Drawing.Point(688, 141)
+        Me.lblRemaining.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblRemaining.Name = "lblRemaining"
+        Me.lblRemaining.Size = New System.Drawing.Size(139, 17)
+        Me.lblRemaining.TabIndex = 81
+        Me.lblRemaining.Text = "Remaining Guesses:"
+        '
+        'lblCountRem
+        '
+        Me.lblCountRem.AutoSize = True
+        Me.lblCountRem.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCountRem.ForeColor = System.Drawing.Color.Red
+        Me.lblCountRem.Location = New System.Drawing.Point(824, 138)
+        Me.lblCountRem.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblCountRem.Name = "lblCountRem"
+        Me.lblCountRem.Size = New System.Drawing.Size(18, 20)
+        Me.lblCountRem.TabIndex = 82
+        Me.lblCountRem.Text = "0"
         '
         'TextBox1
         '
-        Me.TextBox1.AccessibleName = "txtBoxWrong"
-        Me.TextBox1.Location = New System.Drawing.Point(633, 210)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox1.Multiline = True
+        Me.TextBox1.Location = New System.Drawing.Point(623, 110)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(176, 127)
-        Me.TextBox1.TabIndex = 57
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 83
         '
-        'Button34
+        'Game
         '
-        Me.Button34.AccessibleName = "btnPosition6"
-        Me.Button34.Enabled = False
-        Me.Button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button34.Location = New System.Drawing.Point(335, 335)
-        Me.Button34.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button34.Name = "Button34"
-        Me.Button34.Size = New System.Drawing.Size(48, 2)
-        Me.Button34.TabIndex = 103
-        Me.Button34.Text = "Button34"
-        Me.Button34.UseVisualStyleBackColor = True
-        '
-        'Button33
-        '
-        Me.Button33.AccessibleName = "btnPosition5"
-        Me.Button33.Enabled = False
-        Me.Button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button33.Location = New System.Drawing.Point(282, 335)
-        Me.Button33.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button33.Name = "Button33"
-        Me.Button33.Size = New System.Drawing.Size(48, 2)
-        Me.Button33.TabIndex = 102
-        Me.Button33.Text = "Button33"
-        Me.Button33.UseVisualStyleBackColor = True
-        '
-        'Button32
-        '
-        Me.Button32.AccessibleName = "btnPosition4"
-        Me.Button32.Enabled = False
-        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button32.Location = New System.Drawing.Point(228, 335)
-        Me.Button32.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button32.Name = "Button32"
-        Me.Button32.Size = New System.Drawing.Size(48, 2)
-        Me.Button32.TabIndex = 101
-        Me.Button32.Text = "Button32"
-        Me.Button32.UseVisualStyleBackColor = True
-        '
-        'Button31
-        '
-        Me.Button31.AccessibleName = "btnPosition3"
-        Me.Button31.Enabled = False
-        Me.Button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button31.Location = New System.Drawing.Point(178, 335)
-        Me.Button31.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button31.Name = "Button31"
-        Me.Button31.Size = New System.Drawing.Size(48, 2)
-        Me.Button31.TabIndex = 100
-        Me.Button31.Text = "Button31"
-        Me.Button31.UseVisualStyleBackColor = True
-        '
-        'Button30
-        '
-        Me.Button30.AccessibleName = "btnPosition2"
-        Me.Button30.Enabled = False
-        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button30.Location = New System.Drawing.Point(124, 335)
-        Me.Button30.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button30.Name = "Button30"
-        Me.Button30.Size = New System.Drawing.Size(48, 2)
-        Me.Button30.TabIndex = 99
-        Me.Button30.Text = "Button30"
-        Me.Button30.UseVisualStyleBackColor = True
-        '
-        'Button29
-        '
-        Me.Button29.AccessibleName = "btnPosition1"
-        Me.Button29.Enabled = False
-        Me.Button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button29.Location = New System.Drawing.Point(74, 335)
-        Me.Button29.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button29.Name = "Button29"
-        Me.Button29.Size = New System.Drawing.Size(48, 2)
-        Me.Button29.TabIndex = 98
-        Me.Button29.Text = "Button29"
-        Me.Button29.UseVisualStyleBackColor = True
-        '
-        'Label10
-        '
-        Me.Label10.AccessibleName = "lblLetter6"
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(346, 296)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(36, 36)
-        Me.Label10.TabIndex = 97
-        Me.Label10.Text = "A"
-        '
-        'Label9
-        '
-        Me.Label9.AccessibleName = "lblLetter5"
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(292, 296)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(36, 36)
-        Me.Label9.TabIndex = 96
-        Me.Label9.Text = "A"
-        '
-        'Label8
-        '
-        Me.Label8.AccessibleName = "lblLetter4"
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(242, 296)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(36, 36)
-        Me.Label8.TabIndex = 95
-        Me.Label8.Text = "A"
-        '
-        'Label7
-        '
-        Me.Label7.AccessibleName = "lblLetter2"
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(138, 296)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(36, 36)
-        Me.Label7.TabIndex = 94
-        Me.Label7.Text = "A"
-        '
-        'Label6
-        '
-        Me.Label6.AccessibleName = "lblLetter3"
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(188, 296)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(36, 36)
-        Me.Label6.TabIndex = 93
-        Me.Label6.Text = "A"
-        '
-        'Label5
-        '
-        Me.Label5.AccessibleName = "lblLetter1"
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(84, 296)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(36, 36)
-        Me.Label5.TabIndex = 92
-        Me.Label5.Text = "A"
-        '
-        'Label2
-        '
-        Me.Label2.AccessibleName = "lblLetters"
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(50, 359)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 24)
-        Me.Label2.TabIndex = 91
-        Me.Label2.Text = "Letters"
-        '
-        'Button16
-        '
-        Me.Button16.AccessibleName = "btnZ"
-        Me.Button16.Location = New System.Drawing.Point(362, 435)
-        Me.Button16.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(20, 27)
-        Me.Button16.TabIndex = 90
-        Me.Button16.Text = "Z"
-        Me.Button16.UseVisualStyleBackColor = True
-        '
-        'Button15
-        '
-        Me.Button15.AccessibleName = "btnY"
-        Me.Button15.Location = New System.Drawing.Point(335, 435)
-        Me.Button15.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(20, 27)
-        Me.Button15.TabIndex = 89
-        Me.Button15.Text = "Y"
-        Me.Button15.UseVisualStyleBackColor = True
-        '
-        'Button14
-        '
-        Me.Button14.AccessibleName = "btnW"
-        Me.Button14.Location = New System.Drawing.Point(283, 435)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(20, 27)
-        Me.Button14.TabIndex = 88
-        Me.Button14.Text = "W"
-        Me.Button14.UseVisualStyleBackColor = True
-        '
-        'Button13
-        '
-        Me.Button13.AccessibleName = "btnX"
-        Me.Button13.Location = New System.Drawing.Point(308, 435)
-        Me.Button13.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(20, 27)
-        Me.Button13.TabIndex = 87
-        Me.Button13.Text = "X"
-        Me.Button13.UseVisualStyleBackColor = True
-        '
-        'Button12
-        '
-        Me.Button12.AccessibleName = "btnS"
-        Me.Button12.Location = New System.Drawing.Point(179, 435)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(20, 27)
-        Me.Button12.TabIndex = 86
-        Me.Button12.Text = "S"
-        Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Button11
-        '
-        Me.Button11.AccessibleName = "btnT"
-        Me.Button11.Location = New System.Drawing.Point(204, 435)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(20, 27)
-        Me.Button11.TabIndex = 85
-        Me.Button11.Text = "T"
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Button10
-        '
-        Me.Button10.AccessibleName = "btnU"
-        Me.Button10.Location = New System.Drawing.Point(231, 435)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(20, 27)
-        Me.Button10.TabIndex = 84
-        Me.Button10.Text = "U"
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.AccessibleName = "btnV"
-        Me.Button9.Location = New System.Drawing.Point(258, 435)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(20, 27)
-        Me.Button9.TabIndex = 83
-        Me.Button9.Text = "V"
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button26
-        '
-        Me.Button26.AccessibleName = "btnB"
-        Me.Button26.Location = New System.Drawing.Point(75, 402)
-        Me.Button26.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button26.Name = "Button26"
-        Me.Button26.Size = New System.Drawing.Size(20, 27)
-        Me.Button26.TabIndex = 82
-        Me.Button26.Text = "BA"
-        Me.Button26.UseVisualStyleBackColor = True
-        '
-        'Button25
-        '
-        Me.Button25.AccessibleName = "btnF"
-        Me.Button25.Location = New System.Drawing.Point(179, 402)
-        Me.Button25.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button25.Name = "Button25"
-        Me.Button25.Size = New System.Drawing.Size(20, 27)
-        Me.Button25.TabIndex = 81
-        Me.Button25.Text = "F"
-        Me.Button25.UseVisualStyleBackColor = True
-        '
-        'Button24
-        '
-        Me.Button24.AccessibleName = "btnE"
-        Me.Button24.Location = New System.Drawing.Point(154, 402)
-        Me.Button24.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(20, 27)
-        Me.Button24.TabIndex = 80
-        Me.Button24.Text = "E"
-        Me.Button24.UseVisualStyleBackColor = True
-        '
-        'Button23
-        '
-        Me.Button23.AccessibleName = "btnD"
-        Me.Button23.Location = New System.Drawing.Point(127, 402)
-        Me.Button23.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button23.Name = "Button23"
-        Me.Button23.Size = New System.Drawing.Size(20, 27)
-        Me.Button23.TabIndex = 79
-        Me.Button23.Text = "D"
-        Me.Button23.UseVisualStyleBackColor = True
-        '
-        'Button22
-        '
-        Me.Button22.AccessibleName = "btnG"
-        Me.Button22.Location = New System.Drawing.Point(204, 402)
-        Me.Button22.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button22.Name = "Button22"
-        Me.Button22.Size = New System.Drawing.Size(20, 27)
-        Me.Button22.TabIndex = 78
-        Me.Button22.Text = "G"
-        Me.Button22.UseVisualStyleBackColor = True
-        '
-        'Button21
-        '
-        Me.Button21.AccessibleName = "btnH"
-        Me.Button21.Location = New System.Drawing.Point(231, 402)
-        Me.Button21.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(20, 27)
-        Me.Button21.TabIndex = 77
-        Me.Button21.Text = "H"
-        Me.Button21.UseVisualStyleBackColor = True
-        '
-        'Button20
-        '
-        Me.Button20.AccessibleName = "btnI"
-        Me.Button20.Location = New System.Drawing.Point(258, 402)
-        Me.Button20.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(20, 27)
-        Me.Button20.TabIndex = 76
-        Me.Button20.Text = "I"
-        Me.Button20.UseVisualStyleBackColor = True
-        '
-        'Button19
-        '
-        Me.Button19.AccessibleName = "btnJ"
-        Me.Button19.Location = New System.Drawing.Point(283, 402)
-        Me.Button19.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(20, 27)
-        Me.Button19.TabIndex = 75
-        Me.Button19.Text = "J"
-        Me.Button19.UseVisualStyleBackColor = True
-        '
-        'Button18
-        '
-        Me.Button18.AccessibleName = "btnK"
-        Me.Button18.Location = New System.Drawing.Point(308, 402)
-        Me.Button18.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(20, 27)
-        Me.Button18.TabIndex = 74
-        Me.Button18.Text = "K"
-        Me.Button18.UseVisualStyleBackColor = True
-        '
-        'Button17
-        '
-        Me.Button17.AccessibleName = "btnL"
-        Me.Button17.Location = New System.Drawing.Point(335, 402)
-        Me.Button17.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(20, 27)
-        Me.Button17.TabIndex = 73
-        Me.Button17.Text = "L"
-        Me.Button17.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.AccessibleName = "btnM"
-        Me.Button8.Location = New System.Drawing.Point(362, 402)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(20, 27)
-        Me.Button8.TabIndex = 72
-        Me.Button8.Text = "M"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.AccessibleName = "btnN"
-        Me.Button7.Location = New System.Drawing.Point(50, 435)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(20, 27)
-        Me.Button7.TabIndex = 71
-        Me.Button7.Text = "N"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.AccessibleName = "btnC"
-        Me.Button6.Location = New System.Drawing.Point(100, 402)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(20, 27)
-        Me.Button6.TabIndex = 70
-        Me.Button6.Text = "C"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.AccessibleName = "btnO"
-        Me.Button5.Location = New System.Drawing.Point(75, 435)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(20, 27)
-        Me.Button5.TabIndex = 69
-        Me.Button5.Text = "O"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.AccessibleName = "btnP"
-        Me.Button4.Location = New System.Drawing.Point(100, 435)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(20, 27)
-        Me.Button4.TabIndex = 68
-        Me.Button4.Text = "P"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.AccessibleName = "btnQ"
-        Me.Button3.Location = New System.Drawing.Point(127, 435)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(20, 27)
-        Me.Button3.TabIndex = 67
-        Me.Button3.Text = "Q"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.AccessibleName = "btnR"
-        Me.Button2.Location = New System.Drawing.Point(154, 435)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(20, 27)
-        Me.Button2.TabIndex = 66
-        Me.Button2.Text = "R"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.AccessibleName = "btnA"
-        Me.Button1.Location = New System.Drawing.Point(50, 402)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(20, 27)
-        Me.Button1.TabIndex = 65
-        Me.Button1.Text = "A"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Game_new
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(849, 497)
-        Me.Controls.Add(Me.Button34)
-        Me.Controls.Add(Me.Button33)
-        Me.Controls.Add(Me.Button32)
-        Me.Controls.Add(Me.Button31)
-        Me.Controls.Add(Me.Button30)
-        Me.Controls.Add(Me.Button29)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button16)
-        Me.Controls.Add(Me.Button15)
-        Me.Controls.Add(Me.Button14)
-        Me.Controls.Add(Me.Button13)
-        Me.Controls.Add(Me.Button12)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.Button10)
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button26)
-        Me.Controls.Add(Me.Button25)
-        Me.Controls.Add(Me.Button24)
-        Me.Controls.Add(Me.Button23)
-        Me.Controls.Add(Me.Button22)
-        Me.Controls.Add(Me.Button21)
-        Me.Controls.Add(Me.Button20)
-        Me.Controls.Add(Me.Button19)
-        Me.Controls.Add(Me.Button18)
-        Me.Controls.Add(Me.Button17)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button28)
-        Me.Controls.Add(Me.Button27)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(857, 498)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Name = "Game_new"
-        Me.Text = "Game_new"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Controls.Add(Me.lblCountRem)
+        Me.Controls.Add(Me.lblRemaining)
+        Me.Controls.Add(Me.btnO)
+        Me.Controls.Add(Me.btnP)
+        Me.Controls.Add(Me.btnQ)
+        Me.Controls.Add(Me.btnR)
+        Me.Controls.Add(Me.btnS)
+        Me.Controls.Add(Me.btnT)
+        Me.Controls.Add(Me.btnU)
+        Me.Controls.Add(Me.btnV)
+        Me.Controls.Add(Me.btnW)
+        Me.Controls.Add(Me.btnX)
+        Me.Controls.Add(Me.btnY)
+        Me.Controls.Add(Me.btnZ)
+        Me.Controls.Add(Me.btnN)
+        Me.Controls.Add(Me.btnB)
+        Me.Controls.Add(Me.btnC)
+        Me.Controls.Add(Me.btnD)
+        Me.Controls.Add(Me.btnE)
+        Me.Controls.Add(Me.btnF)
+        Me.Controls.Add(Me.btnG)
+        Me.Controls.Add(Me.btnH)
+        Me.Controls.Add(Me.btnI)
+        Me.Controls.Add(Me.btnJ)
+        Me.Controls.Add(Me.btnK)
+        Me.Controls.Add(Me.btnL)
+        Me.Controls.Add(Me.btnM)
+        Me.Controls.Add(Me.picImage)
+        Me.Controls.Add(Me.btnPosition6)
+        Me.Controls.Add(Me.btnPosition5)
+        Me.Controls.Add(Me.btnPosition4)
+        Me.Controls.Add(Me.btnPosition3)
+        Me.Controls.Add(Me.btnPosition2)
+        Me.Controls.Add(Me.btnPosition1)
+        Me.Controls.Add(Me.lblLetter6)
+        Me.Controls.Add(Me.lblLetter5)
+        Me.Controls.Add(Me.lblLetter4)
+        Me.Controls.Add(Me.lblLetter2)
+        Me.Controls.Add(Me.lblLetter3)
+        Me.Controls.Add(Me.lblLetter1)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnRestart)
+        Me.Controls.Add(Me.lblCategory)
+        Me.Controls.Add(Me.cmbCategory)
+        Me.Controls.Add(Me.cmbDifficult)
+        Me.Controls.Add(Me.lblDifficult)
+        Me.Controls.Add(Me.lblLetters)
+        Me.Controls.Add(Me.lblWrongGuesses)
+        Me.Controls.Add(Me.txtWrongGuesses)
+        Me.Controls.Add(Me.btnA)
+        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Name = "Game"
+        Me.Text = "Game"
+        CType(Me.picImage, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Button28 As System.Windows.Forms.Button
-    Friend WithEvents Button27 As System.Windows.Forms.Button
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnA As System.Windows.Forms.Button
+    Friend WithEvents txtWrongGuesses As System.Windows.Forms.TextBox
+    Friend WithEvents lblWrongGuesses As System.Windows.Forms.Label
+    Friend WithEvents lblLetters As System.Windows.Forms.Label
+    Friend WithEvents lblDifficult As System.Windows.Forms.Label
+    Friend WithEvents cmbDifficult As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbCategory As System.Windows.Forms.ComboBox
+    Friend WithEvents lblCategory As System.Windows.Forms.Label
+    Friend WithEvents btnRestart As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents lblLetter1 As System.Windows.Forms.Label
+    Friend WithEvents lblLetter3 As System.Windows.Forms.Label
+    Friend WithEvents lblLetter2 As System.Windows.Forms.Label
+    Friend WithEvents lblLetter4 As System.Windows.Forms.Label
+    Friend WithEvents lblLetter5 As System.Windows.Forms.Label
+    Friend WithEvents lblLetter6 As System.Windows.Forms.Label
+    Friend WithEvents btnPosition1 As System.Windows.Forms.Button
+    Friend WithEvents btnPosition2 As System.Windows.Forms.Button
+    Friend WithEvents btnPosition3 As System.Windows.Forms.Button
+    Friend WithEvents btnPosition4 As System.Windows.Forms.Button
+    Friend WithEvents btnPosition5 As System.Windows.Forms.Button
+    Friend WithEvents btnPosition6 As System.Windows.Forms.Button
+    Friend WithEvents picImage As System.Windows.Forms.PictureBox
+    Friend WithEvents btnM As System.Windows.Forms.Button
+    Friend WithEvents btnL As System.Windows.Forms.Button
+    Friend WithEvents btnK As System.Windows.Forms.Button
+    Friend WithEvents btnJ As System.Windows.Forms.Button
+    Friend WithEvents btnI As System.Windows.Forms.Button
+    Friend WithEvents btnH As System.Windows.Forms.Button
+    Friend WithEvents btnG As System.Windows.Forms.Button
+    Friend WithEvents btnF As System.Windows.Forms.Button
+    Friend WithEvents btnE As System.Windows.Forms.Button
+    Friend WithEvents btnD As System.Windows.Forms.Button
+    Friend WithEvents btnC As System.Windows.Forms.Button
+    Friend WithEvents btnB As System.Windows.Forms.Button
+    Friend WithEvents btnO As System.Windows.Forms.Button
+    Friend WithEvents btnP As System.Windows.Forms.Button
+    Friend WithEvents btnQ As System.Windows.Forms.Button
+    Friend WithEvents btnR As System.Windows.Forms.Button
+    Friend WithEvents btnS As System.Windows.Forms.Button
+    Friend WithEvents btnT As System.Windows.Forms.Button
+    Friend WithEvents btnU As System.Windows.Forms.Button
+    Friend WithEvents btnV As System.Windows.Forms.Button
+    Friend WithEvents btnW As System.Windows.Forms.Button
+    Friend WithEvents btnX As System.Windows.Forms.Button
+    Friend WithEvents btnY As System.Windows.Forms.Button
+    Friend WithEvents btnZ As System.Windows.Forms.Button
+    Friend WithEvents btnN As System.Windows.Forms.Button
+    Friend WithEvents lblRemaining As System.Windows.Forms.Label
+    Friend WithEvents lblCountRem As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button34 As System.Windows.Forms.Button
-    Friend WithEvents Button33 As System.Windows.Forms.Button
-    Friend WithEvents Button32 As System.Windows.Forms.Button
-    Friend WithEvents Button31 As System.Windows.Forms.Button
-    Friend WithEvents Button30 As System.Windows.Forms.Button
-    Friend WithEvents Button29 As System.Windows.Forms.Button
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Button16 As System.Windows.Forms.Button
-    Friend WithEvents Button15 As System.Windows.Forms.Button
-    Friend WithEvents Button14 As System.Windows.Forms.Button
-    Friend WithEvents Button13 As System.Windows.Forms.Button
-    Friend WithEvents Button12 As System.Windows.Forms.Button
-    Friend WithEvents Button11 As System.Windows.Forms.Button
-    Friend WithEvents Button10 As System.Windows.Forms.Button
-    Friend WithEvents Button9 As System.Windows.Forms.Button
-    Friend WithEvents Button26 As System.Windows.Forms.Button
-    Friend WithEvents Button25 As System.Windows.Forms.Button
-    Friend WithEvents Button24 As System.Windows.Forms.Button
-    Friend WithEvents Button23 As System.Windows.Forms.Button
-    Friend WithEvents Button22 As System.Windows.Forms.Button
-    Friend WithEvents Button21 As System.Windows.Forms.Button
-    Friend WithEvents Button20 As System.Windows.Forms.Button
-    Friend WithEvents Button19 As System.Windows.Forms.Button
-    Friend WithEvents Button18 As System.Windows.Forms.Button
-    Friend WithEvents Button17 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
