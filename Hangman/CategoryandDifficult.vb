@@ -33,8 +33,4 @@ Public Class CategoryandDifficult
         cmbDifficult.DataSource = difficulties
     End Sub
 
-    Private Sub MessageBox(p1 As String)
-        Throw New NotImplementedException
-    End Sub
-
 End Class

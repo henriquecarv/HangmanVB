@@ -42,13 +42,11 @@ Partial Class CategoryandDifficult
         'cmbDifficult
         '
         Me.cmbDifficult.FormattingEnabled = True
-        Me.cmbDifficult.Items.AddRange(New Object() {"Easy", "Medium", "Hard"})
         Me.cmbDifficult.Location = New System.Drawing.Point(200, 209)
         Me.cmbDifficult.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbDifficult.Name = "cmbDifficult"
         Me.cmbDifficult.Size = New System.Drawing.Size(121, 24)
         Me.cmbDifficult.TabIndex = 1
-        Me.cmbDifficult.Text = "Select Difficulty"
         '
         'lblCategory
         '
@@ -85,7 +83,7 @@ Partial Class CategoryandDifficult
         '
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.Location = New System.Drawing.Point(351, 295)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(97, 39)
         Me.btnExit.TabIndex = 5
