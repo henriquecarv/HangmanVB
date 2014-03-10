@@ -143,6 +143,7 @@
     <Content Include="Images\hangman6.gif" />
     <Content Include="Images\hangman7.gif" />
     <Content Include="Images\hangman8.gif" />
+    <Content Include="Images\Home_Screen.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

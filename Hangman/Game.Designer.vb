@@ -86,13 +86,29 @@ Partial Class Game
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
         CType(Me.picImage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnA
         '
         Me.btnA.AccessibleName = ""
-        Me.btnA.Location = New System.Drawing.Point(36, 446)
+        Me.btnA.Location = New System.Drawing.Point(233, 403)
         Me.btnA.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnA.Name = "btnA"
         Me.btnA.Size = New System.Drawing.Size(51, 42)
@@ -103,7 +119,7 @@ Partial Class Game
         'txtWrongGuesses
         '
         Me.txtWrongGuesses.AccessibleName = "txtBoxWrong"
-        Me.txtWrongGuesses.Location = New System.Drawing.Point(921, 278)
+        Me.txtWrongGuesses.Location = New System.Drawing.Point(1123, 285)
         Me.txtWrongGuesses.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtWrongGuesses.Multiline = True
         Me.txtWrongGuesses.Name = "txtWrongGuesses"
@@ -115,7 +131,7 @@ Partial Class Game
         Me.lblWrongGuesses.AccessibleName = "lblWordsGuessed"
         Me.lblWrongGuesses.AutoSize = True
         Me.lblWrongGuesses.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWrongGuesses.Location = New System.Drawing.Point(943, 251)
+        Me.lblWrongGuesses.Location = New System.Drawing.Point(1118, 238)
         Me.lblWrongGuesses.Name = "lblWrongGuesses"
         Me.lblWrongGuesses.Size = New System.Drawing.Size(154, 25)
         Me.lblWrongGuesses.TabIndex = 35
@@ -136,7 +152,7 @@ Partial Class Game
         '
         Me.lblDifficult.AccessibleName = "lblDifficult"
         Me.lblDifficult.AutoSize = True
-        Me.lblDifficult.Location = New System.Drawing.Point(920, 34)
+        Me.lblDifficult.Location = New System.Drawing.Point(1120, 34)
         Me.lblDifficult.Name = "lblDifficult"
         Me.lblDifficult.Size = New System.Drawing.Size(69, 17)
         Me.lblDifficult.TabIndex = 37
@@ -147,7 +163,7 @@ Partial Class Game
         Me.cmbDifficult.AccessibleName = "comboBoxDifficult"
         Me.cmbDifficult.FormattingEnabled = True
         Me.cmbDifficult.Items.AddRange(New Object() {"Easy", "Medium", "Hard"})
-        Me.cmbDifficult.Location = New System.Drawing.Point(989, 34)
+        Me.cmbDifficult.Location = New System.Drawing.Point(1189, 34)
         Me.cmbDifficult.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbDifficult.Name = "cmbDifficult"
         Me.cmbDifficult.Size = New System.Drawing.Size(121, 24)
@@ -157,7 +173,7 @@ Partial Class Game
         '
         Me.cmbCategory.AccessibleName = "comboBoxCategory"
         Me.cmbCategory.FormattingEnabled = True
-        Me.cmbCategory.Location = New System.Drawing.Point(989, 91)
+        Me.cmbCategory.Location = New System.Drawing.Point(1189, 91)
         Me.cmbCategory.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbCategory.Name = "cmbCategory"
         Me.cmbCategory.Size = New System.Drawing.Size(121, 24)
@@ -167,7 +183,7 @@ Partial Class Game
         '
         Me.lblCategory.AccessibleName = "lblCategory"
         Me.lblCategory.AutoSize = True
-        Me.lblCategory.Location = New System.Drawing.Point(920, 94)
+        Me.lblCategory.Location = New System.Drawing.Point(1120, 94)
         Me.lblCategory.Name = "lblCategory"
         Me.lblCategory.Size = New System.Drawing.Size(69, 17)
         Me.lblCategory.TabIndex = 40
@@ -177,7 +193,7 @@ Partial Class Game
         '
         Me.btnRestart.AccessibleName = "btnRestart"
         Me.btnRestart.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRestart.Location = New System.Drawing.Point(1027, 542)
+        Me.btnRestart.Location = New System.Drawing.Point(1227, 548)
         Me.btnRestart.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRestart.Name = "btnRestart"
         Me.btnRestart.Size = New System.Drawing.Size(95, 36)
@@ -189,7 +205,7 @@ Partial Class Game
         '
         Me.btnExit.AccessibleName = "btnExit"
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(923, 542)
+        Me.btnExit.Location = New System.Drawing.Point(1123, 548)
         Me.btnExit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(79, 34)
@@ -259,7 +275,7 @@ Partial Class Game
         '
         'btnPosition1
         '
-        Me.btnPosition1.AccessibleName = "btnPosition1"
+        Me.btnPosition1.AccessibleName = ""
         Me.btnPosition1.Enabled = False
         Me.btnPosition1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPosition1.Location = New System.Drawing.Point(40, 338)
@@ -272,7 +288,7 @@ Partial Class Game
         '
         'btnPosition2
         '
-        Me.btnPosition2.AccessibleName = "btnPosition2"
+        Me.btnPosition2.AccessibleName = ""
         Me.btnPosition2.Enabled = False
         Me.btnPosition2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPosition2.Location = New System.Drawing.Point(91, 338)
@@ -285,7 +301,7 @@ Partial Class Game
         '
         'btnPosition3
         '
-        Me.btnPosition3.AccessibleName = "btnPosition3"
+        Me.btnPosition3.AccessibleName = ""
         Me.btnPosition3.Enabled = False
         Me.btnPosition3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPosition3.Location = New System.Drawing.Point(144, 338)
@@ -298,7 +314,7 @@ Partial Class Game
         '
         'btnPosition4
         '
-        Me.btnPosition4.AccessibleName = "btnPosition4"
+        Me.btnPosition4.AccessibleName = ""
         Me.btnPosition4.Enabled = False
         Me.btnPosition4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPosition4.Location = New System.Drawing.Point(195, 338)
@@ -311,7 +327,7 @@ Partial Class Game
         '
         'btnPosition5
         '
-        Me.btnPosition5.AccessibleName = "btnPosition5"
+        Me.btnPosition5.AccessibleName = ""
         Me.btnPosition5.Enabled = False
         Me.btnPosition5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPosition5.Location = New System.Drawing.Point(248, 338)
@@ -324,7 +340,7 @@ Partial Class Game
         '
         'btnPosition6
         '
-        Me.btnPosition6.AccessibleName = "btnPosition6"
+        Me.btnPosition6.AccessibleName = ""
         Me.btnPosition6.Enabled = False
         Me.btnPosition6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPosition6.Location = New System.Drawing.Point(301, 338)
@@ -342,7 +358,7 @@ Partial Class Game
         Me.picImage.Location = New System.Drawing.Point(36, 25)
         Me.picImage.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picImage.Name = "picImage"
-        Me.picImage.Size = New System.Drawing.Size(749, 238)
+        Me.picImage.Size = New System.Drawing.Size(964, 238)
         Me.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picImage.TabIndex = 55
         Me.picImage.TabStop = False
@@ -350,7 +366,7 @@ Partial Class Game
         'btnM
         '
         Me.btnM.AccessibleName = ""
-        Me.btnM.Location = New System.Drawing.Point(708, 446)
+        Me.btnM.Location = New System.Drawing.Point(905, 403)
         Me.btnM.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnM.Name = "btnM"
         Me.btnM.Size = New System.Drawing.Size(51, 42)
@@ -361,7 +377,7 @@ Partial Class Game
         'btnL
         '
         Me.btnL.AccessibleName = ""
-        Me.btnL.Location = New System.Drawing.Point(652, 446)
+        Me.btnL.Location = New System.Drawing.Point(849, 403)
         Me.btnL.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnL.Name = "btnL"
         Me.btnL.Size = New System.Drawing.Size(51, 42)
@@ -372,7 +388,7 @@ Partial Class Game
         'btnK
         '
         Me.btnK.AccessibleName = ""
-        Me.btnK.Location = New System.Drawing.Point(596, 446)
+        Me.btnK.Location = New System.Drawing.Point(793, 403)
         Me.btnK.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnK.Name = "btnK"
         Me.btnK.Size = New System.Drawing.Size(51, 42)
@@ -383,7 +399,7 @@ Partial Class Game
         'btnJ
         '
         Me.btnJ.AccessibleName = ""
-        Me.btnJ.Location = New System.Drawing.Point(540, 446)
+        Me.btnJ.Location = New System.Drawing.Point(737, 403)
         Me.btnJ.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnJ.Name = "btnJ"
         Me.btnJ.Size = New System.Drawing.Size(51, 42)
@@ -394,7 +410,7 @@ Partial Class Game
         'btnI
         '
         Me.btnI.AccessibleName = ""
-        Me.btnI.Location = New System.Drawing.Point(484, 446)
+        Me.btnI.Location = New System.Drawing.Point(681, 403)
         Me.btnI.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnI.Name = "btnI"
         Me.btnI.Size = New System.Drawing.Size(51, 42)
@@ -405,7 +421,7 @@ Partial Class Game
         'btnH
         '
         Me.btnH.AccessibleName = ""
-        Me.btnH.Location = New System.Drawing.Point(428, 446)
+        Me.btnH.Location = New System.Drawing.Point(625, 403)
         Me.btnH.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnH.Name = "btnH"
         Me.btnH.Size = New System.Drawing.Size(51, 42)
@@ -416,7 +432,7 @@ Partial Class Game
         'btnG
         '
         Me.btnG.AccessibleName = ""
-        Me.btnG.Location = New System.Drawing.Point(372, 446)
+        Me.btnG.Location = New System.Drawing.Point(569, 403)
         Me.btnG.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnG.Name = "btnG"
         Me.btnG.Size = New System.Drawing.Size(51, 42)
@@ -427,7 +443,7 @@ Partial Class Game
         'btnF
         '
         Me.btnF.AccessibleName = ""
-        Me.btnF.Location = New System.Drawing.Point(316, 446)
+        Me.btnF.Location = New System.Drawing.Point(513, 403)
         Me.btnF.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnF.Name = "btnF"
         Me.btnF.Size = New System.Drawing.Size(51, 42)
@@ -438,7 +454,7 @@ Partial Class Game
         'btnE
         '
         Me.btnE.AccessibleName = ""
-        Me.btnE.Location = New System.Drawing.Point(260, 446)
+        Me.btnE.Location = New System.Drawing.Point(457, 403)
         Me.btnE.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnE.Name = "btnE"
         Me.btnE.Size = New System.Drawing.Size(51, 42)
@@ -449,7 +465,7 @@ Partial Class Game
         'btnD
         '
         Me.btnD.AccessibleName = ""
-        Me.btnD.Location = New System.Drawing.Point(204, 446)
+        Me.btnD.Location = New System.Drawing.Point(401, 403)
         Me.btnD.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnD.Name = "btnD"
         Me.btnD.Size = New System.Drawing.Size(51, 42)
@@ -460,7 +476,7 @@ Partial Class Game
         'btnC
         '
         Me.btnC.AccessibleName = ""
-        Me.btnC.Location = New System.Drawing.Point(148, 446)
+        Me.btnC.Location = New System.Drawing.Point(345, 403)
         Me.btnC.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnC.Name = "btnC"
         Me.btnC.Size = New System.Drawing.Size(51, 42)
@@ -471,7 +487,7 @@ Partial Class Game
         'btnB
         '
         Me.btnB.AccessibleName = "btnB"
-        Me.btnB.Location = New System.Drawing.Point(92, 446)
+        Me.btnB.Location = New System.Drawing.Point(289, 403)
         Me.btnB.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnB.Name = "btnB"
         Me.btnB.Size = New System.Drawing.Size(51, 42)
@@ -482,7 +498,7 @@ Partial Class Game
         'btnO
         '
         Me.btnO.AccessibleName = ""
-        Me.btnO.Location = New System.Drawing.Point(92, 540)
+        Me.btnO.Location = New System.Drawing.Point(289, 497)
         Me.btnO.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnO.Name = "btnO"
         Me.btnO.Size = New System.Drawing.Size(51, 42)
@@ -493,7 +509,7 @@ Partial Class Game
         'btnP
         '
         Me.btnP.AccessibleName = ""
-        Me.btnP.Location = New System.Drawing.Point(148, 540)
+        Me.btnP.Location = New System.Drawing.Point(345, 497)
         Me.btnP.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnP.Name = "btnP"
         Me.btnP.Size = New System.Drawing.Size(51, 42)
@@ -504,7 +520,7 @@ Partial Class Game
         'btnQ
         '
         Me.btnQ.AccessibleName = ""
-        Me.btnQ.Location = New System.Drawing.Point(204, 540)
+        Me.btnQ.Location = New System.Drawing.Point(401, 497)
         Me.btnQ.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnQ.Name = "btnQ"
         Me.btnQ.Size = New System.Drawing.Size(51, 42)
@@ -515,7 +531,7 @@ Partial Class Game
         'btnR
         '
         Me.btnR.AccessibleName = ""
-        Me.btnR.Location = New System.Drawing.Point(260, 540)
+        Me.btnR.Location = New System.Drawing.Point(457, 497)
         Me.btnR.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnR.Name = "btnR"
         Me.btnR.Size = New System.Drawing.Size(51, 42)
@@ -526,7 +542,7 @@ Partial Class Game
         'btnS
         '
         Me.btnS.AccessibleName = ""
-        Me.btnS.Location = New System.Drawing.Point(316, 540)
+        Me.btnS.Location = New System.Drawing.Point(513, 497)
         Me.btnS.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnS.Name = "btnS"
         Me.btnS.Size = New System.Drawing.Size(51, 42)
@@ -537,7 +553,7 @@ Partial Class Game
         'btnT
         '
         Me.btnT.AccessibleName = ""
-        Me.btnT.Location = New System.Drawing.Point(372, 540)
+        Me.btnT.Location = New System.Drawing.Point(569, 497)
         Me.btnT.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnT.Name = "btnT"
         Me.btnT.Size = New System.Drawing.Size(51, 42)
@@ -548,7 +564,7 @@ Partial Class Game
         'btnU
         '
         Me.btnU.AccessibleName = ""
-        Me.btnU.Location = New System.Drawing.Point(428, 540)
+        Me.btnU.Location = New System.Drawing.Point(625, 497)
         Me.btnU.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnU.Name = "btnU"
         Me.btnU.Size = New System.Drawing.Size(51, 42)
@@ -559,7 +575,7 @@ Partial Class Game
         'btnV
         '
         Me.btnV.AccessibleName = ""
-        Me.btnV.Location = New System.Drawing.Point(484, 540)
+        Me.btnV.Location = New System.Drawing.Point(681, 497)
         Me.btnV.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnV.Name = "btnV"
         Me.btnV.Size = New System.Drawing.Size(51, 42)
@@ -570,7 +586,7 @@ Partial Class Game
         'btnW
         '
         Me.btnW.AccessibleName = ""
-        Me.btnW.Location = New System.Drawing.Point(540, 540)
+        Me.btnW.Location = New System.Drawing.Point(737, 497)
         Me.btnW.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnW.Name = "btnW"
         Me.btnW.Size = New System.Drawing.Size(51, 42)
@@ -581,7 +597,7 @@ Partial Class Game
         'btnX
         '
         Me.btnX.AccessibleName = ""
-        Me.btnX.Location = New System.Drawing.Point(596, 540)
+        Me.btnX.Location = New System.Drawing.Point(793, 497)
         Me.btnX.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnX.Name = "btnX"
         Me.btnX.Size = New System.Drawing.Size(51, 42)
@@ -592,7 +608,7 @@ Partial Class Game
         'btnY
         '
         Me.btnY.AccessibleName = ""
-        Me.btnY.Location = New System.Drawing.Point(652, 540)
+        Me.btnY.Location = New System.Drawing.Point(849, 497)
         Me.btnY.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnY.Name = "btnY"
         Me.btnY.Size = New System.Drawing.Size(51, 42)
@@ -603,7 +619,7 @@ Partial Class Game
         'btnZ
         '
         Me.btnZ.AccessibleName = ""
-        Me.btnZ.Location = New System.Drawing.Point(708, 540)
+        Me.btnZ.Location = New System.Drawing.Point(905, 497)
         Me.btnZ.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnZ.Name = "btnZ"
         Me.btnZ.Size = New System.Drawing.Size(51, 42)
@@ -614,7 +630,7 @@ Partial Class Game
         'btnN
         '
         Me.btnN.AccessibleName = ""
-        Me.btnN.Location = New System.Drawing.Point(36, 539)
+        Me.btnN.Location = New System.Drawing.Point(233, 496)
         Me.btnN.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnN.Name = "btnN"
         Me.btnN.Size = New System.Drawing.Size(51, 42)
@@ -626,7 +642,7 @@ Partial Class Game
         '
         Me.lblRemaining.AutoSize = True
         Me.lblRemaining.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRemaining.Location = New System.Drawing.Point(917, 174)
+        Me.lblRemaining.Location = New System.Drawing.Point(1119, 172)
         Me.lblRemaining.Name = "lblRemaining"
         Me.lblRemaining.Size = New System.Drawing.Size(165, 20)
         Me.lblRemaining.TabIndex = 81
@@ -637,7 +653,7 @@ Partial Class Game
         Me.lblCountRem.AutoSize = True
         Me.lblCountRem.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCountRem.ForeColor = System.Drawing.Color.Red
-        Me.lblCountRem.Location = New System.Drawing.Point(1099, 170)
+        Me.lblCountRem.Location = New System.Drawing.Point(1301, 168)
         Me.lblCountRem.Name = "lblCountRem"
         Me.lblCountRem.Size = New System.Drawing.Size(23, 25)
         Me.lblCountRem.TabIndex = 82
@@ -645,15 +661,15 @@ Partial Class Game
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(831, 135)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Location = New System.Drawing.Point(1018, 132)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(132, 22)
         Me.TextBox1.TabIndex = 83
         '
         'btnPosition12
         '
-        Me.btnPosition12.AccessibleName = "btnPosition6"
+        Me.btnPosition12.AccessibleName = ""
         Me.btnPosition12.Enabled = False
         Me.btnPosition12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPosition12.Location = New System.Drawing.Point(617, 338)
@@ -666,7 +682,7 @@ Partial Class Game
         '
         'btnPosition11
         '
-        Me.btnPosition11.AccessibleName = "btnPosition5"
+        Me.btnPosition11.AccessibleName = ""
         Me.btnPosition11.Enabled = False
         Me.btnPosition11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPosition11.Location = New System.Drawing.Point(564, 338)
@@ -679,7 +695,7 @@ Partial Class Game
         '
         'btnPosition10
         '
-        Me.btnPosition10.AccessibleName = "btnPosition4"
+        Me.btnPosition10.AccessibleName = ""
         Me.btnPosition10.Enabled = False
         Me.btnPosition10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPosition10.Location = New System.Drawing.Point(511, 338)
@@ -692,7 +708,7 @@ Partial Class Game
         '
         'btnPosition9
         '
-        Me.btnPosition9.AccessibleName = "btnPosition3"
+        Me.btnPosition9.AccessibleName = ""
         Me.btnPosition9.Enabled = False
         Me.btnPosition9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPosition9.Location = New System.Drawing.Point(460, 338)
@@ -705,7 +721,7 @@ Partial Class Game
         '
         'btnPosition8
         '
-        Me.btnPosition8.AccessibleName = "btnPosition2"
+        Me.btnPosition8.AccessibleName = ""
         Me.btnPosition8.Enabled = False
         Me.btnPosition8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPosition8.Location = New System.Drawing.Point(407, 338)
@@ -718,7 +734,7 @@ Partial Class Game
         '
         'btnPosition7
         '
-        Me.btnPosition7.AccessibleName = "btnPosition1"
+        Me.btnPosition7.AccessibleName = ""
         Me.btnPosition7.Enabled = False
         Me.btnPosition7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPosition7.Location = New System.Drawing.Point(356, 338)
@@ -789,11 +805,211 @@ Partial Class Game
         Me.Label6.Size = New System.Drawing.Size(0, 36)
         Me.Label6.TabIndex = 84
         '
+        'Button1
+        '
+        Me.Button1.AccessibleName = ""
+        Me.Button1.Enabled = False
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(1042, 338)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(48, 2)
+        Me.Button1.TabIndex = 111
+        Me.Button1.Text = "Button34"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.AccessibleName = ""
+        Me.Button2.Enabled = False
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(989, 338)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(48, 2)
+        Me.Button2.TabIndex = 110
+        Me.Button2.Text = "Button33"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.AccessibleName = ""
+        Me.Button3.Enabled = False
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(936, 338)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(48, 2)
+        Me.Button3.TabIndex = 109
+        Me.Button3.Text = "Button32"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.AccessibleName = ""
+        Me.Button4.Enabled = False
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Location = New System.Drawing.Point(885, 338)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(48, 2)
+        Me.Button4.TabIndex = 108
+        Me.Button4.Text = "Button31"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.AccessibleName = ""
+        Me.Button5.Enabled = False
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Location = New System.Drawing.Point(832, 338)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(48, 2)
+        Me.Button5.TabIndex = 107
+        Me.Button5.Text = "Button30"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.AccessibleName = ""
+        Me.Button6.Enabled = False
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Location = New System.Drawing.Point(781, 338)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(48, 2)
+        Me.Button6.TabIndex = 106
+        Me.Button6.Text = "Button29"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Label7
+        '
+        Me.Label7.AccessibleName = "lblLetter6"
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(1053, 300)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(0, 36)
+        Me.Label7.TabIndex = 105
+        '
+        'Label8
+        '
+        Me.Label8.AccessibleName = "lblLetter5"
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(1000, 300)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(0, 36)
+        Me.Label8.TabIndex = 104
+        '
+        'Label9
+        '
+        Me.Label9.AccessibleName = "lblLetter4"
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(949, 300)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(0, 36)
+        Me.Label9.TabIndex = 103
+        '
+        'Label10
+        '
+        Me.Label10.AccessibleName = "lblLetter2"
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(845, 300)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(0, 36)
+        Me.Label10.TabIndex = 102
+        '
+        'Label11
+        '
+        Me.Label11.AccessibleName = "lblLetter3"
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(896, 300)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(0, 36)
+        Me.Label11.TabIndex = 101
+        '
+        'Label12
+        '
+        Me.Label12.AccessibleName = "lblLetter1"
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(792, 300)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(0, 36)
+        Me.Label12.TabIndex = 100
+        '
+        'Button7
+        '
+        Me.Button7.AccessibleName = ""
+        Me.Button7.Enabled = False
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Location = New System.Drawing.Point(726, 338)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(48, 2)
+        Me.Button7.TabIndex = 99
+        Me.Button7.Text = "Button34"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.AccessibleName = ""
+        Me.Button8.Enabled = False
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Location = New System.Drawing.Point(673, 338)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(48, 2)
+        Me.Button8.TabIndex = 98
+        Me.Button8.Text = "Button33"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Label13
+        '
+        Me.Label13.AccessibleName = "lblLetter6"
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(737, 300)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(0, 36)
+        Me.Label13.TabIndex = 97
+        '
+        'Label14
+        '
+        Me.Label14.AccessibleName = "lblLetter5"
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(684, 300)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(0, 36)
+        Me.Label14.TabIndex = 96
+        '
         'Game
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1143, 613)
+        Me.ClientSize = New System.Drawing.Size(1350, 613)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.btnPosition12)
         Me.Controls.Add(Me.btnPosition11)
         Me.Controls.Add(Me.btnPosition10)
@@ -928,4 +1144,20 @@ Partial Class Game
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents Label14 As System.Windows.Forms.Label
 End Class
