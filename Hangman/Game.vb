@@ -16,7 +16,7 @@ Public Class Game
 
     Private Sub Game_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         
-        Dim con As OleDbConnection = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;data source=C:\Users\Bhavna\Downloads\Hangman.accdb;Persist Security Info=False;")
+        Dim con As OleDbConnection = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;data Source=Hangman.accdb;Persist Security Info=False;")
         Dim cmd As OleDbCommand = New OleDbCommand("SELECT * FROM Category", con)
         con.Open()
         Dim myDA As OleDbDataAdapter = New OleDbDataAdapter(cmd)
@@ -245,7 +245,7 @@ Public Class Game
         wordss.Clear()
         Dim count_random As Integer
         count_random = 0
-        Using comm As OleDbConnection = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;data source=C:\Users\Bhavna\Downloads\Hangman.accdb")
+        Using comm As OleDbConnection = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;data Source=Hangman.accdb")
             comm.Open()
             Using cmd As New OleDbCommand("SELECT word_name From Word Where word_category = @Category", comm)
                 cmd.Parameters.AddWithValue("@Category", cat_id.ToString)

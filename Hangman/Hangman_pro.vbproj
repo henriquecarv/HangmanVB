@@ -134,6 +134,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Hangman.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\hangman0.gif" />
     <Content Include="Images\hangman1.gif" />
     <Content Include="Images\hangman2.gif" />
