@@ -252,6 +252,7 @@ Partial Class Game
         Me.lblLetter4.Name = "lblLetter4"
         Me.lblLetter4.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter4.TabIndex = 46
+        Me.lblLetter4.Visible = False
         '
         'lblLetter5
         '
@@ -262,6 +263,7 @@ Partial Class Game
         Me.lblLetter5.Name = "lblLetter5"
         Me.lblLetter5.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter5.TabIndex = 47
+        Me.lblLetter5.Visible = False
         '
         'lblLetter6
         '
@@ -272,6 +274,7 @@ Partial Class Game
         Me.lblLetter6.Name = "lblLetter6"
         Me.lblLetter6.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter6.TabIndex = 48
+        Me.lblLetter6.Visible = False
         '
         'btnPosition1
         '
@@ -324,6 +327,7 @@ Partial Class Game
         Me.btnPosition4.TabIndex = 52
         Me.btnPosition4.Text = "Button32"
         Me.btnPosition4.UseVisualStyleBackColor = True
+        Me.btnPosition4.Visible = False
         '
         'btnPosition5
         '
@@ -337,6 +341,7 @@ Partial Class Game
         Me.btnPosition5.TabIndex = 53
         Me.btnPosition5.Text = "Button33"
         Me.btnPosition5.UseVisualStyleBackColor = True
+        Me.btnPosition5.Visible = False
         '
         'btnPosition6
         '
@@ -350,6 +355,7 @@ Partial Class Game
         Me.btnPosition6.TabIndex = 54
         Me.btnPosition6.Text = "Button34"
         Me.btnPosition6.UseVisualStyleBackColor = True
+        Me.btnPosition6.Visible = False
         '
         'picImage
         '
@@ -679,6 +685,7 @@ Partial Class Game
         Me.btnPosition12.TabIndex = 95
         Me.btnPosition12.Text = "Button34"
         Me.btnPosition12.UseVisualStyleBackColor = True
+        Me.btnPosition12.Visible = False
         '
         'btnPosition11
         '
@@ -692,6 +699,7 @@ Partial Class Game
         Me.btnPosition11.TabIndex = 94
         Me.btnPosition11.Text = "Button33"
         Me.btnPosition11.UseVisualStyleBackColor = True
+        Me.btnPosition11.Visible = False
         '
         'btnPosition10
         '
@@ -705,6 +713,7 @@ Partial Class Game
         Me.btnPosition10.TabIndex = 93
         Me.btnPosition10.Text = "Button32"
         Me.btnPosition10.UseVisualStyleBackColor = True
+        Me.btnPosition10.Visible = False
         '
         'btnPosition9
         '
@@ -718,6 +727,7 @@ Partial Class Game
         Me.btnPosition9.TabIndex = 92
         Me.btnPosition9.Text = "Button31"
         Me.btnPosition9.UseVisualStyleBackColor = True
+        Me.btnPosition9.Visible = False
         '
         'btnPosition8
         '
@@ -731,6 +741,7 @@ Partial Class Game
         Me.btnPosition8.TabIndex = 91
         Me.btnPosition8.Text = "Button30"
         Me.btnPosition8.UseVisualStyleBackColor = True
+        Me.btnPosition8.Visible = False
         '
         'btnPosition7
         '
@@ -744,6 +755,7 @@ Partial Class Game
         Me.btnPosition7.TabIndex = 90
         Me.btnPosition7.Text = "Button29"
         Me.btnPosition7.UseVisualStyleBackColor = True
+        Me.btnPosition7.Visible = False
         '
         'lblLetter12
         '
@@ -754,6 +766,7 @@ Partial Class Game
         Me.lblLetter12.Name = "lblLetter12"
         Me.lblLetter12.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter12.TabIndex = 89
+        Me.lblLetter12.Visible = False
         '
         'lblLetter11
         '
@@ -764,6 +777,7 @@ Partial Class Game
         Me.lblLetter11.Name = "lblLetter11"
         Me.lblLetter11.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter11.TabIndex = 88
+        Me.lblLetter11.Visible = False
         '
         'lblLetter10
         '
@@ -774,6 +788,7 @@ Partial Class Game
         Me.lblLetter10.Name = "lblLetter10"
         Me.lblLetter10.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter10.TabIndex = 87
+        Me.lblLetter10.Visible = False
         '
         'lblLetter8
         '
@@ -784,6 +799,7 @@ Partial Class Game
         Me.lblLetter8.Name = "lblLetter8"
         Me.lblLetter8.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter8.TabIndex = 86
+        Me.lblLetter8.Visible = False
         '
         'lblLetter9
         '
@@ -794,6 +810,7 @@ Partial Class Game
         Me.lblLetter9.Name = "lblLetter9"
         Me.lblLetter9.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter9.TabIndex = 85
+        Me.lblLetter9.Visible = False
         '
         'lblLetter7
         '
@@ -804,6 +821,7 @@ Partial Class Game
         Me.lblLetter7.Name = "lblLetter7"
         Me.lblLetter7.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter7.TabIndex = 84
+        Me.lblLetter7.Visible = False
         '
         'btnPosition20
         '
@@ -817,6 +835,7 @@ Partial Class Game
         Me.btnPosition20.TabIndex = 111
         Me.btnPosition20.Text = "Button34"
         Me.btnPosition20.UseVisualStyleBackColor = True
+        Me.btnPosition20.Visible = False
         '
         'btnPosition19
         '
@@ -830,6 +849,7 @@ Partial Class Game
         Me.btnPosition19.TabIndex = 110
         Me.btnPosition19.Text = "Button33"
         Me.btnPosition19.UseVisualStyleBackColor = True
+        Me.btnPosition19.Visible = False
         '
         'btnPosition18
         '
@@ -843,6 +863,7 @@ Partial Class Game
         Me.btnPosition18.TabIndex = 109
         Me.btnPosition18.Text = "Button32"
         Me.btnPosition18.UseVisualStyleBackColor = True
+        Me.btnPosition18.Visible = False
         '
         'btnPosition17
         '
@@ -856,6 +877,7 @@ Partial Class Game
         Me.btnPosition17.TabIndex = 108
         Me.btnPosition17.Text = "Button31"
         Me.btnPosition17.UseVisualStyleBackColor = True
+        Me.btnPosition17.Visible = False
         '
         'btnPosition16
         '
@@ -869,6 +891,7 @@ Partial Class Game
         Me.btnPosition16.TabIndex = 107
         Me.btnPosition16.Text = "Button30"
         Me.btnPosition16.UseVisualStyleBackColor = True
+        Me.btnPosition16.Visible = False
         '
         'btnPosition15
         '
@@ -882,6 +905,7 @@ Partial Class Game
         Me.btnPosition15.TabIndex = 106
         Me.btnPosition15.Text = "Button29"
         Me.btnPosition15.UseVisualStyleBackColor = True
+        Me.btnPosition15.Visible = False
         '
         'lblLetter20
         '
@@ -892,6 +916,7 @@ Partial Class Game
         Me.lblLetter20.Name = "lblLetter20"
         Me.lblLetter20.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter20.TabIndex = 105
+        Me.lblLetter20.Visible = False
         '
         'lblLetter19
         '
@@ -902,6 +927,7 @@ Partial Class Game
         Me.lblLetter19.Name = "lblLetter19"
         Me.lblLetter19.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter19.TabIndex = 104
+        Me.lblLetter19.Visible = False
         '
         'lblLetter18
         '
@@ -912,6 +938,7 @@ Partial Class Game
         Me.lblLetter18.Name = "lblLetter18"
         Me.lblLetter18.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter18.TabIndex = 103
+        Me.lblLetter18.Visible = False
         '
         'lblLetter16
         '
@@ -922,6 +949,7 @@ Partial Class Game
         Me.lblLetter16.Name = "lblLetter16"
         Me.lblLetter16.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter16.TabIndex = 102
+        Me.lblLetter16.Visible = False
         '
         'lblLetter17
         '
@@ -932,6 +960,7 @@ Partial Class Game
         Me.lblLetter17.Name = "lblLetter17"
         Me.lblLetter17.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter17.TabIndex = 101
+        Me.lblLetter17.Visible = False
         '
         'lblLetter15
         '
@@ -942,6 +971,7 @@ Partial Class Game
         Me.lblLetter15.Name = "lblLetter15"
         Me.lblLetter15.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter15.TabIndex = 100
+        Me.lblLetter15.Visible = False
         '
         'btnPosition14
         '
@@ -955,6 +985,7 @@ Partial Class Game
         Me.btnPosition14.TabIndex = 99
         Me.btnPosition14.Text = "Button34"
         Me.btnPosition14.UseVisualStyleBackColor = True
+        Me.btnPosition14.Visible = False
         '
         'btnPosition13
         '
@@ -968,6 +999,7 @@ Partial Class Game
         Me.btnPosition13.TabIndex = 98
         Me.btnPosition13.Text = "Button33"
         Me.btnPosition13.UseVisualStyleBackColor = True
+        Me.btnPosition13.Visible = False
         '
         'lblLetter14
         '
@@ -978,6 +1010,7 @@ Partial Class Game
         Me.lblLetter14.Name = "lblLetter14"
         Me.lblLetter14.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter14.TabIndex = 97
+        Me.lblLetter14.Visible = False
         '
         'lblLetter13
         '
@@ -988,6 +1021,7 @@ Partial Class Game
         Me.lblLetter13.Name = "lblLetter13"
         Me.lblLetter13.Size = New System.Drawing.Size(0, 36)
         Me.lblLetter13.TabIndex = 96
+        Me.lblLetter13.Visible = False
         '
         'Game
         '

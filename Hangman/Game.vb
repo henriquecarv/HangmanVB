@@ -53,13 +53,86 @@ Public Class Game
         Dim number As Integer
         number = Word_Random(category)
         Dim rand_number As Integer = randy.Next(1, number)
-        words = wordss.Item(rand_number + 1).ToUpper
+        words = wordss.Item(rand_number + 1).ToLower
         TextBox1.Text = words
 
         'words = apple
 
         '        cmbCategory.Text = CategoryandDifficult.cmbCategory.Text
         '       cmbDifficult.Text = CategoryandDifficult.cmbDifficult.Text
+
+        If words.Length > 3 Then
+            If words.Length >= 4 Then
+                btnPosition4.Visible = True
+                lblLetter4.Visible = True
+            End If
+            If words.Length >= 5 Then
+                btnPosition5.Visible = True
+                lblLetter5.Visible = True
+            End If
+            If words.Length >= 6 Then
+                btnPosition6.Visible = True
+                lblLetter6.Visible = True
+            End If
+            If words.Length >= 7 Then
+                btnPosition7.Visible = True
+                lblLetter7.Visible = True
+            End If
+            If words.Length >= 8 Then
+                btnPosition8.Visible = True
+                lblLetter8.Visible = True
+            End If
+            If words.Length >= 9 Then
+                btnPosition9.Visible = True
+                lblLetter9.Visible = True
+            End If
+            If words.Length >= 10 Then
+                btnPosition10.Visible = True
+                lblLetter10.Visible = True
+            End If
+            If words.Length >= 11 Then
+                btnPosition11.Visible = True
+                lblLetter11.Visible = True
+            End If
+            If words.Length >= 12 Then
+                btnPosition12.Visible = True
+                lblLetter12.Visible = True
+            End If
+            If words.Length >= 13 Then
+                btnPosition13.Visible = True
+                lblLetter13.Visible = True
+            End If
+            If words.Length >= 14 Then
+                btnPosition14.Visible = True
+                lblLetter14.Visible = True
+            End If
+            If words.Length >= 15 Then
+                btnPosition15.Visible = True
+                lblLetter15.Visible = True
+            End If
+            If words.Length >= 16 Then
+                btnPosition16.Visible = True
+                lblLetter16.Visible = True
+            End If
+            If words.Length >= 17 Then
+                btnPosition17.Visible = True
+                lblLetter17.Visible = True
+            End If
+            If words.Length >= 18 Then
+                btnPosition18.Visible = True
+                lblLetter18.Visible = True
+            End If
+            If words.Length >= 19 Then
+                btnPosition19.Visible = True
+                lblLetter19.Visible = True
+            End If
+            If words.Length = 20 Then
+                btnPosition20.Visible = True
+                lblLetter20.Visible = True
+            End If
+
+        End If
+
     End Sub
 
     Function funResult(ByVal pLetter As String)
@@ -278,7 +351,7 @@ Public Class Game
         Dim number As Integer
         number = Word_Random(category)
         Dim rand_number As Integer = randy.Next(1, number)
-        words = wordss.Item(rand_number + 1).ToUpper
+        words = wordss.Item(rand_number + 1).ToLower
         TextBox1.Text = words
 
         'category = Me.cmbCategory.SelectedIndex
