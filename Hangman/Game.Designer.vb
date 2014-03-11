@@ -215,7 +215,7 @@ Partial Class Game
         '
         'lblLetter1
         '
-        Me.lblLetter1.AccessibleName = "lblLetter1"
+        Me.lblLetter1.AccessibleName = ""
         Me.lblLetter1.AutoSize = True
         Me.lblLetter1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter1.Location = New System.Drawing.Point(51, 300)
@@ -225,7 +225,7 @@ Partial Class Game
         '
         'lblLetter3
         '
-        Me.lblLetter3.AccessibleName = "lblLetter3"
+        Me.lblLetter3.AccessibleName = ""
         Me.lblLetter3.AutoSize = True
         Me.lblLetter3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter3.Location = New System.Drawing.Point(155, 300)
@@ -235,7 +235,7 @@ Partial Class Game
         '
         'lblLetter2
         '
-        Me.lblLetter2.AccessibleName = "lblLetter2"
+        Me.lblLetter2.AccessibleName = ""
         Me.lblLetter2.AutoSize = True
         Me.lblLetter2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter2.Location = New System.Drawing.Point(104, 300)
@@ -245,7 +245,7 @@ Partial Class Game
         '
         'lblLetter4
         '
-        Me.lblLetter4.AccessibleName = "lblLetter4"
+        Me.lblLetter4.AccessibleName = ""
         Me.lblLetter4.AutoSize = True
         Me.lblLetter4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter4.Location = New System.Drawing.Point(208, 300)
@@ -255,7 +255,7 @@ Partial Class Game
         '
         'lblLetter5
         '
-        Me.lblLetter5.AccessibleName = "lblLetter5"
+        Me.lblLetter5.AccessibleName = ""
         Me.lblLetter5.AutoSize = True
         Me.lblLetter5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter5.Location = New System.Drawing.Point(259, 300)
@@ -265,7 +265,7 @@ Partial Class Game
         '
         'lblLetter6
         '
-        Me.lblLetter6.AccessibleName = "lblLetter6"
+        Me.lblLetter6.AccessibleName = ""
         Me.lblLetter6.AutoSize = True
         Me.lblLetter6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter6.Location = New System.Drawing.Point(312, 300)

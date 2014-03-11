@@ -6,6 +6,7 @@ Public Class Game
     Dim words As String
     Dim difficulties = New String() {"Easy", "Medium", "Hard"}
     Dim count_difficulty = New Integer() {8, 6, 4}
+    Dim newcount_difficulty As Integer
     Dim wordss As New List(Of String)
     Dim category As Integer
 
@@ -35,11 +36,16 @@ Public Class Game
         cmbCategory.SelectedIndex = CategoryandDifficult.cmbCategory.SelectedIndex
         cmbDifficult.SelectedIndex = CategoryandDifficult.cmbDifficult.SelectedIndex
 
+
+
         If cmbDifficult.SelectedIndex = 1 Then
+            newcount_difficulty = count_difficulty(cmbDifficult.SelectedIndex)
             lblCountRem.Text = count_difficulty(cmbDifficult.SelectedIndex).ToString
         ElseIf cmbDifficult.SelectedIndex = 2 Then
+            newcount_difficulty = count_difficulty(cmbDifficult.SelectedIndex)
             lblCountRem.Text = count_difficulty(cmbDifficult.SelectedIndex).ToString
         Else
+            newcount_difficulty = count_difficulty(cmbDifficult.SelectedIndex)
             lblCountRem.Text = count_difficulty(cmbDifficult.SelectedIndex).ToString
         End If
 
@@ -47,7 +53,7 @@ Public Class Game
         Dim number As Integer
         number = Word_Random(category)
         Dim rand_number As Integer = randy.Next(1, number)
-        words = wordss.Item(rand_number + 1).ToLower
+        words = wordss.Item(rand_number + 1).ToUpper
         TextBox1.Text = words
 
         'words = apple
@@ -79,7 +85,13 @@ Public Class Game
                 lblLetter6.Text = pLetter
             End If
         Else
-            txtWrongGuesses.Text = txtWrongGuesses.Text + " " + pLetter
+            If newcount_difficulty <> 0 Then
+                txtWrongGuesses.Text = txtWrongGuesses.Text + " " + pLetter
+                newcount_difficulty -= 1
+                lblCountRem.Text = newcount_difficulty.ToString
+            Else
+                MsgBox("Nice Try! Better luck next time.")
+            End If
         End If
 
         Return result
@@ -134,7 +146,7 @@ Public Class Game
     End Sub
 
     Private Sub btnI_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnI.Click
-        letter = "T"
+        letter = "I"
         funResult(letter)
         btnI.Enabled = False
     End Sub
@@ -266,7 +278,7 @@ Public Class Game
         Dim number As Integer
         number = Word_Random(category)
         Dim rand_number As Integer = randy.Next(1, number)
-        words = wordss.Item(rand_number + 1).ToLower
+        words = wordss.Item(rand_number + 1).ToUpper
         TextBox1.Text = words
 
         'category = Me.cmbCategory.SelectedIndex
