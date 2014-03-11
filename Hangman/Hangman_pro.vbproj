@@ -137,16 +137,16 @@
     <Content Include="Hangman.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\hangman0.gif" />
-    <Content Include="Images\hangman1.gif" />
-    <Content Include="Images\hangman2.gif" />
-    <Content Include="Images\hangman3.gif" />
-    <Content Include="Images\hangman4.gif" />
-    <Content Include="Images\hangman5.gif" />
-    <Content Include="Images\hangman6.gif" />
-    <Content Include="Images\hangman7.gif" />
-    <Content Include="Images\hangman8.gif" />
-    <Content Include="Images\Home_Screen.jpg" />
+    <None Include="Resources\hangman01.gif" />
+    <None Include="Resources\Home_Screen.jpg" />
+    <None Include="Resources\hangman8.gif" />
+    <None Include="Resources\hangman7.gif" />
+    <None Include="Resources\hangman6.gif" />
+    <None Include="Resources\hangman5.gif" />
+    <None Include="Resources\hangman4.gif" />
+    <None Include="Resources\hangman3.gif" />
+    <None Include="Resources\hangman2.gif" />
+    <None Include="Resources\hangman1.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

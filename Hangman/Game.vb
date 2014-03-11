@@ -132,6 +132,11 @@ Public Class Game
             End If
 
         End If
+        If newcount_difficulty = 6 Then
+            picHangman.Image = My.Resources.hangman2
+        ElseIf newcount_difficulty = 4 Then
+            picHangman.Image = My.Resources.hangman4
+        End If
 
     End Sub
 
@@ -162,10 +167,26 @@ Public Class Game
                 txtWrongGuesses.Text = txtWrongGuesses.Text + " " + pLetter
                 newcount_difficulty -= 1
                 lblCountRem.Text = newcount_difficulty.ToString
+                If newcount_difficulty = 7 Then
+                    picHangman.Image = My.Resources.hangman1
+                ElseIf newcount_difficulty = 6 Then
+                    picHangman.Image = My.Resources.hangman2
+                ElseIf newcount_difficulty = 5 Then
+                    picHangman.Image = My.Resources.hangman3
+                ElseIf newcount_difficulty = 4 Then
+                    picHangman.Image = My.Resources.hangman4
+                ElseIf newcount_difficulty = 3 Then
+                    picHangman.Image = My.Resources.hangman5
+                ElseIf newcount_difficulty = 2 Then
+                    picHangman.Image = My.Resources.hangman6
+                Else
+                    picHangman.Image = My.Resources.hangman7
+                End If
             Else
+                picHangman.Image = My.Resources.hangman8
                 MsgBox("Nice Try! Better luck next time.")
+                End If
             End If
-        End If
 
         Return result
     End Function

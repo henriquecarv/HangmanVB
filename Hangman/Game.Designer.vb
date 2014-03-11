@@ -22,7 +22,6 @@ Partial Class Game
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Game))
         Me.btnA = New System.Windows.Forms.Button()
         Me.txtWrongGuesses = New System.Windows.Forms.TextBox()
         Me.lblWrongGuesses = New System.Windows.Forms.Label()
@@ -45,7 +44,7 @@ Partial Class Game
         Me.btnPosition4 = New System.Windows.Forms.Button()
         Me.btnPosition5 = New System.Windows.Forms.Button()
         Me.btnPosition6 = New System.Windows.Forms.Button()
-        Me.picImage = New System.Windows.Forms.PictureBox()
+        Me.picHangman = New System.Windows.Forms.PictureBox()
         Me.btnM = New System.Windows.Forms.Button()
         Me.btnL = New System.Windows.Forms.Button()
         Me.btnK = New System.Windows.Forms.Button()
@@ -102,7 +101,7 @@ Partial Class Game
         Me.btnPosition13 = New System.Windows.Forms.Button()
         Me.lblLetter14 = New System.Windows.Forms.Label()
         Me.lblLetter13 = New System.Windows.Forms.Label()
-        CType(Me.picImage, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picHangman, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnA
@@ -357,17 +356,17 @@ Partial Class Game
         Me.btnPosition6.UseVisualStyleBackColor = True
         Me.btnPosition6.Visible = False
         '
-        'picImage
+        'picHangman
         '
-        Me.picImage.AccessibleName = "picture1"
-        Me.picImage.Image = CType(resources.GetObject("picImage.Image"), System.Drawing.Image)
-        Me.picImage.Location = New System.Drawing.Point(36, 25)
-        Me.picImage.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.picImage.Name = "picImage"
-        Me.picImage.Size = New System.Drawing.Size(964, 238)
-        Me.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picImage.TabIndex = 55
-        Me.picImage.TabStop = False
+        Me.picHangman.AccessibleName = ""
+        Me.picHangman.Image = Global.WindowsApplication1.My.Resources.Resources.hangman0
+        Me.picHangman.Location = New System.Drawing.Point(36, 25)
+        Me.picHangman.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.picHangman.Name = "picHangman"
+        Me.picHangman.Size = New System.Drawing.Size(964, 238)
+        Me.picHangman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picHangman.TabIndex = 55
+        Me.picHangman.TabStop = False
         '
         'btnM
         '
@@ -1084,7 +1083,7 @@ Partial Class Game
         Me.Controls.Add(Me.btnK)
         Me.Controls.Add(Me.btnL)
         Me.Controls.Add(Me.btnM)
-        Me.Controls.Add(Me.picImage)
+        Me.Controls.Add(Me.picHangman)
         Me.Controls.Add(Me.btnPosition6)
         Me.Controls.Add(Me.btnPosition5)
         Me.Controls.Add(Me.btnPosition4)
@@ -1110,7 +1109,7 @@ Partial Class Game
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Game"
         Me.Text = "Game"
-        CType(Me.picImage, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picHangman, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1137,7 +1136,7 @@ Partial Class Game
     Friend WithEvents btnPosition4 As System.Windows.Forms.Button
     Friend WithEvents btnPosition5 As System.Windows.Forms.Button
     Friend WithEvents btnPosition6 As System.Windows.Forms.Button
-    Friend WithEvents picImage As System.Windows.Forms.PictureBox
+    Friend WithEvents picHangman As System.Windows.Forms.PictureBox
     Friend WithEvents btnM As System.Windows.Forms.Button
     Friend WithEvents btnL As System.Windows.Forms.Button
     Friend WithEvents btnK As System.Windows.Forms.Button

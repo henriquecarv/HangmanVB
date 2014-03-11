@@ -59,5 +59,105 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hangman0() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hangman0", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hangman1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hangman1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hangman2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hangman2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hangman3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hangman3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hangman4() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hangman4", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hangman5() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hangman5", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hangman6() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hangman6", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hangman7() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hangman7", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hangman8() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hangman8", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Home_Screen() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Home_Screen", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace
