@@ -7,6 +7,7 @@ Public Class Game
     Dim difficulties = New String() {"Easy", "Medium", "Hard"}
     Dim count_difficulty = New Integer() {8, 6, 4}
     Dim newcount_difficulty As Integer
+    Dim newcount As Integer
     Dim wordss As New List(Of String)
     Dim category As Integer
 
@@ -55,6 +56,10 @@ Public Class Game
         Dim rand_number As Integer = randy.Next(1, number)
         words = wordss.Item(rand_number + 1).ToLower
         TextBox1.Text = words
+        'For index As Integer = 0 To words.Length
+        '    If words.
+        'Next Then
+
 
         'words = apple
 
@@ -141,55 +146,164 @@ Public Class Game
     End Sub
 
     Function funResult(ByVal pLetter As String)
-
+        Dim count As Integer
         Dim result As Boolean = True
+
+
+
         Dim intLength As Integer = words.Length
         Dim intPosition As Integer = 0
-        Dim i As Integer = InStr(words, pLetter.ToLower)
-        If InStr(words, pLetter.ToLower) > 0 Then
-            intPosition = InStr(words, pLetter.ToLower)
-
-            If intPosition = 1 Then
-                lblLetter1.Text = pLetter
-            ElseIf intPosition = 2 Then
-                lblLetter2.Text = pLetter
-            ElseIf intPosition = 3 Then
-                lblLetter3.Text = pLetter
-            ElseIf intPosition = 4 Then
-                lblLetter4.Text = pLetter
-            ElseIf intPosition = 5 Then
-                lblLetter5.Text = pLetter
-            ElseIf intPosition = 6 Then
-                lblLetter6.Text = pLetter
-            End If
-        Else
-            If newcount_difficulty <> 0 Then
-                txtWrongGuesses.Text = txtWrongGuesses.Text + " " + pLetter
-                newcount_difficulty -= 1
-                lblCountRem.Text = newcount_difficulty.ToString
-                If newcount_difficulty = 7 Then
-                    picHangman.Image = My.Resources.hangman1
-                ElseIf newcount_difficulty = 6 Then
-                    picHangman.Image = My.Resources.hangman2
-                ElseIf newcount_difficulty = 5 Then
-                    picHangman.Image = My.Resources.hangman3
-                ElseIf newcount_difficulty = 4 Then
-                    picHangman.Image = My.Resources.hangman4
-                ElseIf newcount_difficulty = 3 Then
-                    picHangman.Image = My.Resources.hangman5
-                ElseIf newcount_difficulty = 2 Then
-                    picHangman.Image = My.Resources.hangman6
+        Dim temp As Integer = InStr(words, pLetter.ToLower)
+        Dim i As Integer
+            For i = 0 To intLength
+                If temp > 0 Then
+                    intPosition = temp 'InStr(words, pLetter.ToLower)
+                    If intPosition = 1 Then
+                        lblLetter1.Text = pLetter
+                    ElseIf intPosition = 2 Then
+                        lblLetter2.Text = pLetter
+                    ElseIf intPosition = 3 Then
+                        lblLetter3.Text = pLetter
+                    ElseIf intPosition = 4 Then
+                        lblLetter4.Text = pLetter
+                    ElseIf intPosition = 5 Then
+                        lblLetter5.Text = pLetter
+                    ElseIf intPosition = 6 Then
+                        lblLetter6.Text = pLetter
+                    ElseIf intPosition = 7 Then
+                        lblLetter7.Text = pLetter
+                    ElseIf intPosition = 8 Then
+                        lblLetter8.Text = pLetter
+                    ElseIf intPosition = 9 Then
+                        lblLetter9.Text = pLetter
+                    ElseIf intPosition = 10 Then
+                        lblLetter10.Text = pLetter
+                    ElseIf intPosition = 11 Then
+                        lblLetter11.Text = pLetter
+                    ElseIf intPosition = 12 Then
+                        lblLetter12.Text = pLetter
+                    ElseIf intPosition = 13 Then
+                        lblLetter13.Text = pLetter
+                    ElseIf intPosition = 14 Then
+                        lblLetter14.Text = pLetter
+                    ElseIf intPosition = 15 Then
+                        lblLetter15.Text = pLetter
+                    ElseIf intPosition = 16 Then
+                        lblLetter16.Text = pLetter
+                    ElseIf intPosition = 17 Then
+                        lblLetter17.Text = pLetter
+                    ElseIf intPosition = 18 Then
+                        lblLetter18.Text = pLetter
+                    ElseIf intPosition = 19 Then
+                        lblLetter19.Text = pLetter
+                    ElseIf intPosition = 20 Then
+                        lblLetter20.Text = pLetter
+                    End If
+                count = count + 1
+                newcount += 1
                 Else
-                    picHangman.Image = My.Resources.hangman7
+                    If count = 0 Then
+                        If newcount_difficulty <> 0 Then
+                            txtWrongGuesses.Text = txtWrongGuesses.Text + " " + pLetter
+                            newcount_difficulty -= 1
+                            lblCountRem.Text = newcount_difficulty.ToString
+                            If newcount_difficulty = 7 Then
+                                picHangman.Image = My.Resources.hangman1
+                            ElseIf newcount_difficulty = 6 Then
+                                picHangman.Image = My.Resources.hangman2
+                            ElseIf newcount_difficulty = 5 Then
+                                picHangman.Image = My.Resources.hangman3
+                            ElseIf newcount_difficulty = 4 Then
+                                picHangman.Image = My.Resources.hangman4
+                            ElseIf newcount_difficulty = 3 Then
+                                picHangman.Image = My.Resources.hangman5
+                            ElseIf newcount_difficulty = 2 Then
+                                picHangman.Image = My.Resources.hangman6
+                            Else
+                                picHangman.Image = My.Resources.hangman7
+                            End If
+                        Else
+                        picHangman.Image = My.Resources.hangman8
+                        Select Case MsgBox("Nice Try! Better luck next time./nDo you want to play again?", MessageBoxButtons.YesNo, "Nice try")
+                            Case MsgBoxResult.Yes
+                                Me.Close()
+                                CategoryandDifficult.Show()
+                            Case MsgBoxResult.No
+                                Me.Close()
+                                Main.Show()
+                        End Select
+
+
+                        End If
+                    End If
+                    Exit For
                 End If
-            Else
-                picHangman.Image = My.Resources.hangman8
-                MsgBox("Nice Try! Better luck next time.")
-                End If
-            End If
+                temp = InStr(intPosition + 1, words, pLetter.ToLower, CompareMethod.Text)
+            Next
+        If (count_space(words) + newcount) = words.Length Then
+            Select Case MsgBox("Congratulations!/nDo you want to play again?", MessageBoxButtons.YesNo, "Congratulations")
+                Case MsgBoxResult.Yes
+                    Me.Close()
+                    CategoryandDifficult.Show()
+                Case MsgBoxResult.No
+                    Me.Close()
+                    Main.Show()
+            End Select
+        End If
 
         Return result
+
     End Function
+    'Function funResult(ByVal pLetter As String)
+
+    '    Dim result As Boolean = True
+    '    Dim intLength As Integer = words.Length
+    '    Dim intPosition As Integer = 0
+    '    Dim i As Integer = InStr(words, pLetter.ToLower)
+    '    If InStr(words, pLetter.ToLower) > 0 Then
+    '        intPosition = InStr(words, pLetter.ToLower)
+
+    '        If intPosition = 1 Then
+    '            lblLetter1.Text = pLetter
+    '        ElseIf intPosition = 2 Then
+    '            lblLetter2.Text = pLetter
+    '        ElseIf intPosition = 3 Then
+    '            lblLetter3.Text = pLetter
+    '        ElseIf intPosition = 4 Then
+    '            lblLetter4.Text = pLetter
+    '        ElseIf intPosition = 5 Then
+    '            lblLetter5.Text = pLetter
+    '        ElseIf intPosition = 6 Then
+    '            lblLetter6.Text = pLetter
+    '        End If
+    '    Else
+    '        If newcount_difficulty <> 0 Then
+    '            txtWrongGuesses.Text = txtWrongGuesses.Text + " " + pLetter
+    '            newcount_difficulty -= 1
+    '            lblCountRem.Text = newcount_difficulty.ToString
+    '            If newcount_difficulty = 7 Then
+    '                picHangman.Image = My.Resources.hangman1
+    '            ElseIf newcount_difficulty = 6 Then
+    '                picHangman.Image = My.Resources.hangman2
+    '            ElseIf newcount_difficulty = 5 Then
+    '                picHangman.Image = My.Resources.hangman3
+    '            ElseIf newcount_difficulty = 4 Then
+    '                picHangman.Image = My.Resources.hangman4
+    '            ElseIf newcount_difficulty = 3 Then
+    '                picHangman.Image = My.Resources.hangman5
+    '            ElseIf newcount_difficulty = 2 Then
+    '                picHangman.Image = My.Resources.hangman6
+    '            Else
+    '                picHangman.Image = My.Resources.hangman7
+    '            End If
+    '        Else
+    '            picHangman.Image = My.Resources.hangman8
+    '            MsgBox("Nice Try! Better luck next time.")
+    '            End If
+    '        End If
+
+    '    Return result
+    'End Function
 
     Private Sub btnA_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnA.Click
         letter = "A"
@@ -346,6 +460,16 @@ Public Class Game
         funResult(letter)
         btnZ.Enabled = False
     End Sub
+
+    Function count_space(ByVal pWord As String) As Integer
+        Dim countSpace As Integer
+        For i = 0 To pWord.Length - 1
+            If pWord.Chars(i) = " " Then
+                countSpace = countSpace + 1
+            End If
+        Next
+        Return countSpace
+    End Function
 
     Private Function Word_Random(ByVal cat_id As Integer) As Integer
         wordss.Clear()
