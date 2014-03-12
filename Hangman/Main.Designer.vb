@@ -71,15 +71,15 @@ Partial Class Main
         Me.txtInstructions.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtInstructions.Multiline = True
         Me.txtInstructions.Name = "txtInstructions"
-        Me.txtInstructions.Size = New System.Drawing.Size(373, 125)
+        Me.txtInstructions.Size = New System.Drawing.Size(373, 143)
         Me.txtInstructions.TabIndex = 3
-        Me.txtInstructions.Text = "" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "       Instructions"
+        Me.txtInstructions.Text = resources.GetString("txtInstructions.Text")
         '
         'btnExit
         '
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.Location = New System.Drawing.Point(493, 215)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(107, 46)
         Me.btnExit.TabIndex = 4
@@ -91,7 +91,6 @@ Partial Class Main
         Me.AccessibleName = "formMain"
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(641, 476)
         Me.Controls.Add(Me.btnExit)

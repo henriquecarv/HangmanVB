@@ -27,7 +27,6 @@ Partial Class CategoryandDifficult
         Me.lblCategory = New System.Windows.Forms.Label()
         Me.lblDifficult = New System.Windows.Forms.Label()
         Me.btnPlay = New System.Windows.Forms.Button()
-        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'cmbCategory
@@ -79,23 +78,11 @@ Partial Class CategoryandDifficult
         Me.btnPlay.Text = "Play"
         Me.btnPlay.UseVisualStyleBackColor = True
         '
-        'btnExit
-        '
-        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(351, 295)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(97, 39)
-        Me.btnExit.TabIndex = 5
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
-        '
         'CategoryandDifficult
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(513, 380)
-        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnPlay)
         Me.Controls.Add(Me.lblDifficult)
         Me.Controls.Add(Me.lblCategory)
@@ -113,5 +100,4 @@ Partial Class CategoryandDifficult
     Friend WithEvents lblCategory As System.Windows.Forms.Label
     Friend WithEvents lblDifficult As System.Windows.Forms.Label
     Friend WithEvents btnPlay As System.Windows.Forms.Button
-    Friend WithEvents btnExit As System.Windows.Forms.Button
 End Class

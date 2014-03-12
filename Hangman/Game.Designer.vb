@@ -666,7 +666,7 @@ Partial Class Game
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(1018, 132)
+        Me.TextBox1.Location = New System.Drawing.Point(1178, 133)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(132, 22)
