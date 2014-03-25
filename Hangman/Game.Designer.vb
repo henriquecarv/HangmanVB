@@ -199,6 +199,7 @@ Partial Class Game
         Me.btnRestart.TabIndex = 41
         Me.btnRestart.Text = "Restart"
         Me.btnRestart.UseVisualStyleBackColor = True
+        Me.btnRestart.Visible = False
         '
         'btnExit
         '
@@ -671,6 +672,7 @@ Partial Class Game
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(132, 22)
         Me.TextBox1.TabIndex = 83
+        Me.TextBox1.Visible = False
         '
         'btnPosition12
         '

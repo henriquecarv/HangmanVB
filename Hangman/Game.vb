@@ -522,4 +522,7 @@ Public Class Game
         'con = Nothing
     End Sub
 
+    Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
+        Me.Refresh()
+    End Sub
 End Class
