@@ -12,7 +12,7 @@ Public Class Game
     Dim category As Integer
 
     Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
-        Me.Close()
+        End
     End Sub
 
 
@@ -51,12 +51,12 @@ Public Class Game
             lblCountRem.Text = count_difficulty(cmbDifficult.SelectedIndex).ToString
         End If
 
-        category = CategoryandDifficult.cmbCategory.SelectedIndex + 1
-        Dim number As Integer
-        number = Word_Random(category)
-        Dim rand_number As Integer = randy.Next(1, number)
-        words = wordss.Item(rand_number + 1).ToLower
-        TextBox1.Text = words
+        'category = CategoryandDifficult.cmbCategory.SelectedIndex + 1
+        'Dim number As Integer
+        'number = Word_Random(category)
+        'Dim rand_number As Integer = randy.Next(1, number)
+        'words = wordss.Item(rand_number + 1).ToLower
+        'TextBox1.Text = words
         'For index As Integer = 0 To words.Length
         '    If words.
         'Next Then
@@ -67,86 +67,25 @@ Public Class Game
         '        cmbCategory.Text = CategoryandDifficult.cmbCategory.Text
         '       cmbDifficult.Text = CategoryandDifficult.cmbDifficult.Text
 
-        If words.Length > 3 Then
-            If words.Length >= 4 Then
-                btnPosition4.Visible = True
-                lblLetter4.Visible = True
-            End If
-            If words.Length >= 5 Then
-                btnPosition5.Visible = True
-                lblLetter5.Visible = True
-            End If
-            If words.Length >= 6 Then
-                btnPosition6.Visible = True
-                lblLetter6.Visible = True
-            End If
-            If words.Length >= 7 Then
-                btnPosition7.Visible = True
-                lblLetter7.Visible = True
-            End If
-            If words.Length >= 8 Then
-                btnPosition8.Visible = True
-                lblLetter8.Visible = True
-            End If
-            If words.Length >= 9 Then
-                btnPosition9.Visible = True
-                lblLetter9.Visible = True
-            End If
-            If words.Length >= 10 Then
-                btnPosition10.Visible = True
-                lblLetter10.Visible = True
-            End If
-            If words.Length >= 11 Then
-                btnPosition11.Visible = True
-                lblLetter11.Visible = True
-            End If
-            If words.Length >= 12 Then
-                btnPosition12.Visible = True
-                lblLetter12.Visible = True
-            End If
-            If words.Length >= 13 Then
-                btnPosition13.Visible = True
-                lblLetter13.Visible = True
-            End If
-            If words.Length >= 14 Then
-                btnPosition14.Visible = True
-                lblLetter14.Visible = True
-            End If
-            If words.Length >= 15 Then
-                btnPosition15.Visible = True
-                lblLetter15.Visible = True
-            End If
-            If words.Length >= 16 Then
-                btnPosition16.Visible = True
-                lblLetter16.Visible = True
-            End If
-            If words.Length >= 17 Then
-                btnPosition17.Visible = True
-                lblLetter17.Visible = True
-            End If
-            If words.Length >= 18 Then
-                btnPosition18.Visible = True
-                lblLetter18.Visible = True
-            End If
-            If words.Length >= 19 Then
-                btnPosition19.Visible = True
-                lblLetter19.Visible = True
-            End If
-            If words.Length = 20 Then
-                btnPosition20.Visible = True
-                lblLetter20.Visible = True
-            End If
+        Word_Generation()
 
-        End If
+        
         If newcount_difficulty = 6 Then
             picHangman.Image = My.Resources.hangman2
         ElseIf newcount_difficulty = 4 Then
             picHangman.Image = My.Resources.hangman4
         End If
 
+        txtWrongGuesses.ReadOnly = True
+
     End Sub
 
     Function funResult(ByVal pLetter As String)
+
+        cmbCategory.Enabled = False
+        cmbDifficult.Enabled = False
+
+
         Dim count As Integer
         Dim result As Boolean = True
 
@@ -225,7 +164,8 @@ Public Class Game
                             End If
                         Else
                         picHangman.Image = My.Resources.hangman8
-                        Select Case MsgBox("Nice Try! Better luck next time./nDo you want to play again?", MessageBoxButtons.YesNo, "Nice try")
+                        Select Case MsgBox("Nice Try! Your word was --'" + words +
+                                           "'-- Better luck next time./nDo you want to play again?", MessageBoxButtons.YesNo, "Nice try")
                             Case MsgBoxResult.Yes
                                 Me.Close()
                                 CategoryandDifficult.Show()
@@ -305,6 +245,115 @@ Public Class Game
 
     '    Return result
     'End Function
+
+    Private Sub Game_KeyPress(ByVal sender As Object, ByVal e As KeyEventArgs) Handles Me.KeyDown
+        Select Case e.KeyCode
+            Case Keys.A
+                letter = "A"
+                funResult(letter)
+                btnA.Enabled = False
+            Case Keys.B
+                letter = "B"
+                funResult(letter)
+                btnB.Enabled = False
+            Case Keys.C
+                letter = "C"
+                funResult(letter)
+                btnC.Enabled = False
+            Case Keys.D
+                letter = "D"
+                funResult(letter)
+                btnD.Enabled = False
+            Case Keys.E
+                letter = "E"
+                funResult(letter)
+                btnE.Enabled = False
+            Case Keys.F
+                letter = "F"
+                funResult(letter)
+                btnF.Enabled = False
+            Case Keys.G
+                letter = "G"
+                funResult(letter)
+                btnG.Enabled = False
+            Case Keys.H
+                letter = "H"
+                funResult(letter)
+                btnH.Enabled = False
+            Case Keys.I
+                letter = "I"
+                funResult(letter)
+                btnI.Enabled = False
+            Case Keys.J
+                letter = "J"
+                funResult(letter)
+                btnJ.Enabled = False
+            Case Keys.K
+                letter = "K"
+                funResult(letter)
+                btnK.Enabled = False
+            Case Keys.L
+                letter = "L"
+                funResult(letter)
+                btnL.Enabled = False
+            Case Keys.M
+                letter = "M"
+                funResult(letter)
+                btnM.Enabled = False
+            Case Keys.N
+                letter = "N"
+                funResult(letter)
+                btnN.Enabled = False
+            Case Keys.O
+                letter = "O"
+                funResult(letter)
+                btnO.Enabled = False
+            Case Keys.P
+                letter = "P"
+                funResult(letter)
+                btnP.Enabled = False
+            Case Keys.Q
+                letter = "Q"
+                funResult(letter)
+                btnQ.Enabled = False
+            Case Keys.R
+                letter = "R"
+                funResult(letter)
+                btnR.Enabled = False
+            Case Keys.S
+                letter = "S"
+                funResult(letter)
+                btnS.Enabled = False
+            Case Keys.T
+                letter = "T"
+                funResult(letter)
+                btnT.Enabled = False
+            Case Keys.U
+                letter = "U"
+                funResult(letter)
+                btnU.Enabled = False
+            Case Keys.V
+                letter = "V"
+                funResult(letter)
+                btnV.Enabled = False
+            Case Keys.W
+                letter = "W"
+                funResult(letter)
+                btnW.Enabled = False
+            Case Keys.X
+                letter = "X"
+                funResult(letter)
+                btnX.Enabled = False
+            Case Keys.Y
+                letter = "Y"
+                funResult(letter)
+                btnY.Enabled = False
+            Case Keys.Z
+                letter = "Z"
+                funResult(letter)
+                btnZ.Enabled = False
+        End Select
+    End Sub
 
     Private Sub btnA_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnA.Click
         letter = "A"
@@ -493,12 +542,8 @@ Public Class Game
 
     Private Sub cmbCategory_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbCategory.SelectedIndexChanged
 
-        category = cmbCategory.SelectedIndex + 1
-        Dim number As Integer
-        number = Word_Random(category)
-        Dim rand_number As Integer = randy.Next(1, number)
-        words = wordss.Item(rand_number + 1).ToLower
-        TextBox1.Text = words
+        Word_Generation()
+
 
         'category = Me.cmbCategory.SelectedIndex
         'Dim number As Integer
@@ -522,8 +567,150 @@ Public Class Game
         'con = Nothing
     End Sub
 
+    Private Sub Button_invisible()
+        btnPosition4.Visible = False
+        lblLetter4.Visible = False
+
+        btnPosition5.Visible = False
+        lblLetter5.Visible = False
+
+        btnPosition6.Visible = False
+        lblLetter6.Visible = False
+
+        btnPosition7.Visible = False
+        lblLetter7.Visible = False
+
+        btnPosition8.Visible = False
+        lblLetter8.Visible = False
+
+        btnPosition9.Visible = False
+        lblLetter9.Visible = False
+
+        btnPosition10.Visible = False
+        lblLetter10.Visible = False
+
+        btnPosition11.Visible = False
+        lblLetter11.Visible = False
+
+        btnPosition12.Visible = False
+        lblLetter12.Visible = False
+
+        btnPosition13.Visible = False
+        lblLetter13.Visible = False
+
+        btnPosition14.Visible = False
+        lblLetter14.Visible = False
+
+        btnPosition15.Visible = False
+        lblLetter15.Visible = False
+
+        btnPosition16.Visible = False
+        lblLetter16.Visible = False
+
+        btnPosition17.Visible = False
+        lblLetter17.Visible = False
+
+        btnPosition18.Visible = False
+        lblLetter18.Visible = False
+
+        btnPosition19.Visible = False
+        lblLetter19.Visible = False
+
+        btnPosition20.Visible = False
+        lblLetter20.Visible = False
+
+    End Sub
+
+    Private Sub Button_visible()
+        If words.Length > 3 Then
+            If words.Length >= 4 Then
+                btnPosition4.Visible = True
+                lblLetter4.Visible = True
+            End If
+            If words.Length >= 5 Then
+                btnPosition5.Visible = True
+                lblLetter5.Visible = True
+            End If
+            If words.Length >= 6 Then
+                btnPosition6.Visible = True
+                lblLetter6.Visible = True
+            End If
+            If words.Length >= 7 Then
+                btnPosition7.Visible = True
+                lblLetter7.Visible = True
+            End If
+            If words.Length >= 8 Then
+                btnPosition8.Visible = True
+                lblLetter8.Visible = True
+            End If
+            If words.Length >= 9 Then
+                btnPosition9.Visible = True
+                lblLetter9.Visible = True
+            End If
+            If words.Length >= 10 Then
+                btnPosition10.Visible = True
+                lblLetter10.Visible = True
+            End If
+            If words.Length >= 11 Then
+                btnPosition11.Visible = True
+                lblLetter11.Visible = True
+            End If
+            If words.Length >= 12 Then
+                btnPosition12.Visible = True
+                lblLetter12.Visible = True
+            End If
+            If words.Length >= 13 Then
+                btnPosition13.Visible = True
+                lblLetter13.Visible = True
+            End If
+            If words.Length >= 14 Then
+                btnPosition14.Visible = True
+                lblLetter14.Visible = True
+            End If
+            If words.Length >= 15 Then
+                btnPosition15.Visible = True
+                lblLetter15.Visible = True
+            End If
+            If words.Length >= 16 Then
+                btnPosition16.Visible = True
+                lblLetter16.Visible = True
+            End If
+            If words.Length >= 17 Then
+                btnPosition17.Visible = True
+                lblLetter17.Visible = True
+            End If
+            If words.Length >= 18 Then
+                btnPosition18.Visible = True
+                lblLetter18.Visible = True
+            End If
+            If words.Length >= 19 Then
+                btnPosition19.Visible = True
+                lblLetter19.Visible = True
+            End If
+            If words.Length = 20 Then
+                btnPosition20.Visible = True
+                lblLetter20.Visible = True
+            End If
+
+        End If
+    End Sub
+
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
         Me.Close()
+        CategoryandDifficult.Show()
+    End Sub
+
+    Private Sub Word_Generation()
+        category = cmbCategory.SelectedIndex + 1
+        Dim number As Integer
+        number = Word_Random(category)
+        Dim rand_number As Integer = randy.Next(0, number - 1)
+        words = wordss.Item(rand_number).ToLower
+        TextBox1.Text = words
+
+        Button_invisible()
+
+        Button_visible()
 
     End Sub
 End Class

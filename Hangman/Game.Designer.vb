@@ -199,7 +199,6 @@ Partial Class Game
         Me.btnRestart.TabIndex = 41
         Me.btnRestart.Text = "Restart"
         Me.btnRestart.UseVisualStyleBackColor = True
-        Me.btnRestart.Visible = False
         '
         'btnExit
         '
@@ -1108,6 +1107,7 @@ Partial Class Game
         Me.Controls.Add(Me.lblWrongGuesses)
         Me.Controls.Add(Me.txtWrongGuesses)
         Me.Controls.Add(Me.btnA)
+        Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Game"
         Me.Text = "Game"
