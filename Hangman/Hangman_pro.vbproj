@@ -7,8 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{083E6DBA-338E-42AB-9B32-A2296BC2694A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
-    <RootNamespace>WindowsApplication1</RootNamespace>
+    <StartupObject>Hangman.My.MyApplication</StartupObject>
+    <RootNamespace>Hangman</RootNamespace>
     <AssemblyName>Hangman</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
@@ -40,6 +40,12 @@
     <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>Hangman.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Hangman-Game-grey.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -123,6 +129,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -134,6 +142,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Hangman-Game-grey.ico" />
     <Content Include="Hangman.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

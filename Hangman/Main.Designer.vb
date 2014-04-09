@@ -98,8 +98,10 @@ Partial Class Main
         Me.Controls.Add(Me.lblWelcome)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.lblTitle)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Main"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hangman"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -22,6 +22,7 @@ Partial Class CategoryandDifficult
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CategoryandDifficult))
         Me.cmbCategory = New System.Windows.Forms.ComboBox()
         Me.cmbDifficult = New System.Windows.Forms.ComboBox()
         Me.lblCategory = New System.Windows.Forms.Label()
@@ -88,8 +89,10 @@ Partial Class CategoryandDifficult
         Me.Controls.Add(Me.lblCategory)
         Me.Controls.Add(Me.cmbDifficult)
         Me.Controls.Add(Me.cmbCategory)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "CategoryandDifficult"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Category & Difficult"
         Me.ResumeLayout(False)
         Me.PerformLayout()

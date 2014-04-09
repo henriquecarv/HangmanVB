@@ -22,6 +22,7 @@ Partial Class Game
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Game))
         Me.btnA = New System.Windows.Forms.Button()
         Me.txtWrongGuesses = New System.Windows.Forms.TextBox()
         Me.lblWrongGuesses = New System.Windows.Forms.Label()
@@ -359,7 +360,7 @@ Partial Class Game
         'picHangman
         '
         Me.picHangman.AccessibleName = ""
-        Me.picHangman.Image = Global.WindowsApplication1.My.Resources.Resources.hangman0
+        Me.picHangman.Image = Global.Hangman.My.Resources.Resources.hangman0
         Me.picHangman.Location = New System.Drawing.Point(36, 25)
         Me.picHangman.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.picHangman.Name = "picHangman"
@@ -1107,9 +1108,11 @@ Partial Class Game
         Me.Controls.Add(Me.lblWrongGuesses)
         Me.Controls.Add(Me.txtWrongGuesses)
         Me.Controls.Add(Me.btnA)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Game"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Game"
         CType(Me.picHangman, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
