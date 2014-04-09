@@ -17,6 +17,10 @@ Public Class CategoryandDifficult
         difficult = cmbCategory.Text
     End Sub
 
+    Private Sub CategoryandDifficult_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        End
+    End Sub
+
     Private Sub CategoryandDifficult_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.MaximizeBox = False
         Dim con As OleDbConnection = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Hangman.accdb;Persist Security Info=False;")

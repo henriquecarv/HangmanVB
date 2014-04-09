@@ -9,6 +9,10 @@
         End
     End Sub
 
+    Private Sub Main_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        End
+    End Sub
+
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.MaximizeBox = False
     End Sub

@@ -15,9 +15,11 @@ Public Class Game
         End
     End Sub
 
+    Private Sub Game_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        End
+    End Sub
 
     Private Sub Game_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
         Me.MaximizeBox = False
         Dim con As OleDbConnection = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;data Source=Hangman.accdb;Persist Security Info=False;")
         Dim cmd As OleDbCommand = New OleDbCommand("SELECT * FROM Category", con)
