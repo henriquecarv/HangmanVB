@@ -16,7 +16,7 @@ Public Class Game
     End Sub
 
     Private Sub Game_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
-        End
+        Main.Show()
     End Sub
 
     Private Sub Game_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -42,16 +42,8 @@ Public Class Game
 
 
 
-        If cmbDifficult.SelectedIndex = 1 Then
-            newcount_difficulty = count_difficulty(cmbDifficult.SelectedIndex)
-            lblCountRem.Text = count_difficulty(cmbDifficult.SelectedIndex).ToString
-        ElseIf cmbDifficult.SelectedIndex = 2 Then
-            newcount_difficulty = count_difficulty(cmbDifficult.SelectedIndex)
-            lblCountRem.Text = count_difficulty(cmbDifficult.SelectedIndex).ToString
-        Else
-            newcount_difficulty = count_difficulty(cmbDifficult.SelectedIndex)
-            lblCountRem.Text = count_difficulty(cmbDifficult.SelectedIndex).ToString
-        End If
+        Difficulty_Selection()
+
 
         'category = CategoryandDifficult.cmbCategory.SelectedIndex + 1
         'Dim number As Integer
@@ -91,62 +83,90 @@ Public Class Game
         Dim count As Integer
         Dim result As Boolean = True
 
-
+        Dim wrong_guesses As String
+        wrong_guesses = txtWrongGuesses.Text
 
         Dim intLength As Integer = words.Length
         Dim intPosition As Integer = 0
         Dim temp As Integer = InStr(words, pLetter.ToLower)
         Dim i As Integer
-            For i = 0 To intLength
-                If temp > 0 Then
-                    intPosition = temp 'InStr(words, pLetter.ToLower)
-                    If intPosition = 1 Then
-                        lblLetter1.Text = pLetter
-                    ElseIf intPosition = 2 Then
-                        lblLetter2.Text = pLetter
-                    ElseIf intPosition = 3 Then
-                        lblLetter3.Text = pLetter
-                    ElseIf intPosition = 4 Then
-                        lblLetter4.Text = pLetter
-                    ElseIf intPosition = 5 Then
-                        lblLetter5.Text = pLetter
-                    ElseIf intPosition = 6 Then
-                        lblLetter6.Text = pLetter
-                    ElseIf intPosition = 7 Then
-                        lblLetter7.Text = pLetter
-                    ElseIf intPosition = 8 Then
-                        lblLetter8.Text = pLetter
-                    ElseIf intPosition = 9 Then
-                        lblLetter9.Text = pLetter
-                    ElseIf intPosition = 10 Then
-                        lblLetter10.Text = pLetter
-                    ElseIf intPosition = 11 Then
-                        lblLetter11.Text = pLetter
-                    ElseIf intPosition = 12 Then
-                        lblLetter12.Text = pLetter
-                    ElseIf intPosition = 13 Then
-                        lblLetter13.Text = pLetter
-                    ElseIf intPosition = 14 Then
-                        lblLetter14.Text = pLetter
-                    ElseIf intPosition = 15 Then
-                        lblLetter15.Text = pLetter
-                    ElseIf intPosition = 16 Then
-                        lblLetter16.Text = pLetter
-                    ElseIf intPosition = 17 Then
-                        lblLetter17.Text = pLetter
-                    ElseIf intPosition = 18 Then
-                        lblLetter18.Text = pLetter
-                    ElseIf intPosition = 19 Then
-                        lblLetter19.Text = pLetter
-                    ElseIf intPosition = 20 Then
-                        lblLetter20.Text = pLetter
-                    End If
+        For i = 0 To intLength
+            If temp > 0 Then
+                intPosition = temp 'InStr(words, pLetter.ToLower)
+                If intPosition = 1 Then
+                    lblLetter1.Text = pLetter
+                ElseIf intPosition = 2 Then
+                    lblLetter2.Text = pLetter
+                ElseIf intPosition = 3 Then
+                    lblLetter3.Text = pLetter
+                ElseIf intPosition = 4 Then
+                    lblLetter4.Text = pLetter
+                ElseIf intPosition = 5 Then
+                    lblLetter5.Text = pLetter
+                ElseIf intPosition = 6 Then
+                    lblLetter6.Text = pLetter
+                ElseIf intPosition = 7 Then
+                    lblLetter7.Text = pLetter
+                ElseIf intPosition = 8 Then
+                    lblLetter8.Text = pLetter
+                ElseIf intPosition = 9 Then
+                    lblLetter9.Text = pLetter
+                ElseIf intPosition = 10 Then
+                    lblLetter10.Text = pLetter
+                ElseIf intPosition = 11 Then
+                    lblLetter11.Text = pLetter
+                ElseIf intPosition = 12 Then
+                    lblLetter12.Text = pLetter
+                ElseIf intPosition = 13 Then
+                    lblLetter13.Text = pLetter
+                ElseIf intPosition = 14 Then
+                    lblLetter14.Text = pLetter
+                ElseIf intPosition = 15 Then
+                    lblLetter15.Text = pLetter
+                ElseIf intPosition = 16 Then
+                    lblLetter16.Text = pLetter
+                ElseIf intPosition = 17 Then
+                    lblLetter17.Text = pLetter
+                ElseIf intPosition = 18 Then
+                    lblLetter18.Text = pLetter
+                ElseIf intPosition = 19 Then
+                    lblLetter19.Text = pLetter
+                ElseIf intPosition = 20 Then
+                    lblLetter20.Text = pLetter
+                End If
                 count = count + 1
                 newcount += 1
-                Else
-                    If count = 0 Then
-                        If newcount_difficulty <> 0 Then
+            Else
+                If count = 0 Then
+                    If newcount_difficulty <> 0 Then
+
+                        ' This is checking for repeated letter
+                        If wrong_guesses.Length <> 0 Then
+                            If InStr(wrong_guesses, pLetter.ToString) = 0 Then
+                                txtWrongGuesses.Text = txtWrongGuesses.Text + " " + pLetter
+                                newcount_difficulty -= 1
+                                lblCountRem.Text = newcount_difficulty.ToString
+                                If newcount_difficulty = 7 Then
+                                    picHangman.Image = My.Resources.hangman1
+                                ElseIf newcount_difficulty = 6 Then
+                                    picHangman.Image = My.Resources.hangman2
+                                ElseIf newcount_difficulty = 5 Then
+                                    picHangman.Image = My.Resources.hangman3
+                                ElseIf newcount_difficulty = 4 Then
+                                    picHangman.Image = My.Resources.hangman4
+                                ElseIf newcount_difficulty = 3 Then
+                                    picHangman.Image = My.Resources.hangman5
+                                ElseIf newcount_difficulty = 2 Then
+                                    picHangman.Image = My.Resources.hangman6
+                                Else
+                                    picHangman.Image = My.Resources.hangman7
+                                End If
+                            End If
+
+                        Else
                             txtWrongGuesses.Text = txtWrongGuesses.Text + " " + pLetter
+                            'End the modified
+                            ' txtWrongGuesses.Text = txtWrongGuesses.Text + " " + pLetter
                             newcount_difficulty -= 1
                             lblCountRem.Text = newcount_difficulty.ToString
                             If newcount_difficulty = 7 Then
@@ -164,10 +184,29 @@ Public Class Game
                             Else
                                 picHangman.Image = My.Resources.hangman7
                             End If
-                        Else
+                        End If
+
+                        ''txtWrongGuesses.Text = txtWrongGuesses.Text + " " + pLetter
+                        ''newcount_difficulty -= 1
+                        ''lblCountRem.Text = newcount_difficulty.ToString
+                        ''If newcount_difficulty = 7 Then
+                        ''    picHangman.Image = My.Resources.hangman1
+                        ''ElseIf newcount_difficulty = 6 Then
+                        ''    picHangman.Image = My.Resources.hangman2
+                        ''ElseIf newcount_difficulty = 5 Then
+                        ''    picHangman.Image = My.Resources.hangman3
+                        ''ElseIf newcount_difficulty = 4 Then
+                        ''    picHangman.Image = My.Resources.hangman4
+                        ''ElseIf newcount_difficulty = 3 Then
+                        ''    picHangman.Image = My.Resources.hangman5
+                        ''ElseIf newcount_difficulty = 2 Then
+                        ''    picHangman.Image = My.Resources.hangman6
+                        ''Else
+                        ''    picHangman.Image = My.Resources.hangman7
+                        ''End If
+                    Else
                         picHangman.Image = My.Resources.hangman8
-                        Select Case MsgBox("Nice Try! Your word was --'" + words +
-                                           "'-- Better luck next time./nDo you want to play again?", MessageBoxButtons.YesNo, "Nice try")
+                        Select Case MsgBox("Nice Try! Your word was --'" + words + "'-- Better luck next time.Do you want to play again?", MessageBoxButtons.YesNo, "Nice try")
                             Case MsgBoxResult.Yes
                                 Me.Close()
                                 CategoryandDifficult.Show()
@@ -177,14 +216,14 @@ Public Class Game
                         End Select
 
 
-                        End If
                     End If
-                    Exit For
                 End If
-                temp = InStr(intPosition + 1, words, pLetter.ToLower, CompareMethod.Text)
-            Next
+                Exit For
+            End If
+            temp = InStr(intPosition + 1, words, pLetter.ToLower, CompareMethod.Text)
+        Next
         If (count_space(words) + newcount) = words.Length Then
-            Select Case MsgBox("Congratulations!/nDo you want to play again?", MessageBoxButtons.YesNo, "Congratulations")
+            Select Case MsgBox("Congratulations!Do you want to play again?", MessageBoxButtons.YesNo, "Congratulations")
                 Case MsgBoxResult.Yes
                     Me.Close()
                     CategoryandDifficult.Show()
@@ -693,7 +732,6 @@ Public Class Game
                 btnPosition20.Visible = True
                 lblLetter20.Visible = True
             End If
-
         End If
     End Sub
 
@@ -714,5 +752,22 @@ Public Class Game
 
         Button_visible()
 
+    End Sub
+
+    Private Sub cmbDifficult_SelectedIndexChanged(sender As Object, e As EventArgs)
+        Difficulty_Selection()
+    End Sub
+
+    Private Sub Difficulty_Selection()
+        If cmbDifficult.SelectedIndex = 1 Then
+            newcount_difficulty = count_difficulty(cmbDifficult.SelectedIndex)
+            lblCountRem.Text = count_difficulty(cmbDifficult.SelectedIndex).ToString
+        ElseIf cmbDifficult.SelectedIndex = 2 Then
+            newcount_difficulty = count_difficulty(cmbDifficult.SelectedIndex)
+            lblCountRem.Text = count_difficulty(cmbDifficult.SelectedIndex).ToString
+        Else
+            newcount_difficulty = count_difficulty(cmbDifficult.SelectedIndex)
+            lblCountRem.Text = count_difficulty(cmbDifficult.SelectedIndex).ToString
+        End If
     End Sub
 End Class

@@ -18,7 +18,7 @@ Public Class CategoryandDifficult
     End Sub
 
     Private Sub CategoryandDifficult_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
-        End
+        Main.Show()
     End Sub
 
     Private Sub CategoryandDifficult_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
