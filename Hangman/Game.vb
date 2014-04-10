@@ -31,7 +31,6 @@ Public Class Game
         cmbCategory.DataSource = myDataSet.Tables("Category").DefaultView
         cmbCategory.ValueMember = "category_id"
         cmbCategory.DisplayMember = "category_name"
-
         con.Close()
         con = Nothing
 
@@ -206,7 +205,7 @@ Public Class Game
                         ''End If
                     Else
                         picHangman.Image = My.Resources.hangman8
-                        Select Case MsgBox("Nice Try! Your word was --'" + words + "'-- Better luck next time.Do you want to play again?", MessageBoxButtons.YesNo, "Nice try")
+                        Select Case MsgBox("Nice Try! Your word was --" + words.ToUpper + "-- Better luck next time.Do you want to play again?", MessageBoxButtons.YesNo, "Nice try")
                             Case MsgBoxResult.Yes
                                 Me.Close()
                                 CategoryandDifficult.Show()
@@ -737,6 +736,7 @@ Public Class Game
 
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
         Me.Close()
+        Main.Hide()
         CategoryandDifficult.Show()
     End Sub
 
@@ -754,7 +754,7 @@ Public Class Game
 
     End Sub
 
-    Private Sub cmbDifficult_SelectedIndexChanged(sender As Object, e As EventArgs)
+    Private Sub cmbDifficult_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbDifficult.SelectedIndexChanged
         Difficulty_Selection()
     End Sub
 

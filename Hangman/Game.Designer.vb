@@ -161,7 +161,7 @@ Partial Class Game
         'cmbDifficult
         '
         Me.cmbDifficult.AccessibleName = "comboBoxDifficult"
-        Me.cmbDifficult.FormattingEnabled = True
+        Me.cmbDifficult.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbDifficult.Items.AddRange(New Object() {"Easy", "Medium", "Hard"})
         Me.cmbDifficult.Location = New System.Drawing.Point(1189, 34)
         Me.cmbDifficult.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -172,6 +172,7 @@ Partial Class Game
         'cmbCategory
         '
         Me.cmbCategory.AccessibleName = "comboBoxCategory"
+        Me.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbCategory.FormattingEnabled = True
         Me.cmbCategory.Location = New System.Drawing.Point(1189, 91)
         Me.cmbCategory.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)

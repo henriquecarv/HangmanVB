@@ -32,6 +32,7 @@ Partial Class CategoryandDifficult
         '
         'cmbCategory
         '
+        Me.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbCategory.FormattingEnabled = True
         Me.cmbCategory.Location = New System.Drawing.Point(200, 97)
         Me.cmbCategory.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -41,6 +42,7 @@ Partial Class CategoryandDifficult
         '
         'cmbDifficult
         '
+        Me.cmbDifficult.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbDifficult.FormattingEnabled = True
         Me.cmbDifficult.Location = New System.Drawing.Point(200, 209)
         Me.cmbDifficult.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
