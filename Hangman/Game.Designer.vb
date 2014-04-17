@@ -166,7 +166,7 @@ Partial Class Game
         Me.cmbDifficult.Location = New System.Drawing.Point(1189, 34)
         Me.cmbDifficult.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbDifficult.Name = "cmbDifficult"
-        Me.cmbDifficult.Size = New System.Drawing.Size(121, 24)
+        Me.cmbDifficult.Size = New System.Drawing.Size(133, 24)
         Me.cmbDifficult.TabIndex = 38
         '
         'cmbCategory
@@ -177,7 +177,7 @@ Partial Class Game
         Me.cmbCategory.Location = New System.Drawing.Point(1189, 91)
         Me.cmbCategory.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbCategory.Name = "cmbCategory"
-        Me.cmbCategory.Size = New System.Drawing.Size(121, 24)
+        Me.cmbCategory.Size = New System.Drawing.Size(133, 24)
         Me.cmbCategory.TabIndex = 39
         '
         'lblCategory
