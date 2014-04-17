@@ -23,6 +23,7 @@ Public Class CategoryandDifficult
 
     Private Sub CategoryandDifficult_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.MaximizeBox = False
+        Main.Hide()
         Dim con As OleDbConnection = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Hangman.accdb;Persist Security Info=False;")
         Dim cmd As OleDbCommand = New OleDbCommand("SELECT * FROM Category", con)
         con.Open()
