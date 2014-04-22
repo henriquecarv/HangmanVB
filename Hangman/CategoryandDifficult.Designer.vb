@@ -87,7 +87,7 @@ Partial Class CategoryandDifficult
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Hangman.My.Resources.Resources.background
+        Me.BackgroundImage = Global.Hangman.My.Resources.Resources.background1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(513, 380)
         Me.Controls.Add(Me.btnPlay)

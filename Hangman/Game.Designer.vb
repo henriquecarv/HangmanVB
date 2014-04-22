@@ -222,6 +222,7 @@ Partial Class Game
         '
         Me.lblLetter1.AccessibleName = ""
         Me.lblLetter1.AutoSize = True
+        Me.lblLetter1.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter1.Location = New System.Drawing.Point(51, 300)
         Me.lblLetter1.Name = "lblLetter1"
@@ -232,6 +233,7 @@ Partial Class Game
         '
         Me.lblLetter3.AccessibleName = ""
         Me.lblLetter3.AutoSize = True
+        Me.lblLetter3.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter3.Location = New System.Drawing.Point(155, 300)
         Me.lblLetter3.Name = "lblLetter3"
@@ -242,6 +244,7 @@ Partial Class Game
         '
         Me.lblLetter2.AccessibleName = ""
         Me.lblLetter2.AutoSize = True
+        Me.lblLetter2.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter2.Location = New System.Drawing.Point(104, 300)
         Me.lblLetter2.Name = "lblLetter2"
@@ -252,6 +255,7 @@ Partial Class Game
         '
         Me.lblLetter4.AccessibleName = ""
         Me.lblLetter4.AutoSize = True
+        Me.lblLetter4.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter4.Location = New System.Drawing.Point(208, 300)
         Me.lblLetter4.Name = "lblLetter4"
@@ -263,6 +267,7 @@ Partial Class Game
         '
         Me.lblLetter5.AccessibleName = ""
         Me.lblLetter5.AutoSize = True
+        Me.lblLetter5.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter5.Location = New System.Drawing.Point(259, 300)
         Me.lblLetter5.Name = "lblLetter5"
@@ -274,6 +279,7 @@ Partial Class Game
         '
         Me.lblLetter6.AccessibleName = ""
         Me.lblLetter6.AutoSize = True
+        Me.lblLetter6.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter6.Location = New System.Drawing.Point(312, 300)
         Me.lblLetter6.Name = "lblLetter6"
@@ -757,6 +763,7 @@ Partial Class Game
         '
         Me.lblLetter12.AccessibleName = ""
         Me.lblLetter12.AutoSize = True
+        Me.lblLetter12.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter12.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter12.Location = New System.Drawing.Point(628, 300)
         Me.lblLetter12.Name = "lblLetter12"
@@ -768,6 +775,7 @@ Partial Class Game
         '
         Me.lblLetter11.AccessibleName = ""
         Me.lblLetter11.AutoSize = True
+        Me.lblLetter11.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter11.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter11.Location = New System.Drawing.Point(575, 300)
         Me.lblLetter11.Name = "lblLetter11"
@@ -779,6 +787,7 @@ Partial Class Game
         '
         Me.lblLetter10.AccessibleName = ""
         Me.lblLetter10.AutoSize = True
+        Me.lblLetter10.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter10.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter10.Location = New System.Drawing.Point(524, 300)
         Me.lblLetter10.Name = "lblLetter10"
@@ -790,6 +799,7 @@ Partial Class Game
         '
         Me.lblLetter8.AccessibleName = ""
         Me.lblLetter8.AutoSize = True
+        Me.lblLetter8.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter8.Location = New System.Drawing.Point(420, 300)
         Me.lblLetter8.Name = "lblLetter8"
@@ -801,6 +811,7 @@ Partial Class Game
         '
         Me.lblLetter9.AccessibleName = ""
         Me.lblLetter9.AutoSize = True
+        Me.lblLetter9.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter9.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter9.Location = New System.Drawing.Point(471, 300)
         Me.lblLetter9.Name = "lblLetter9"
@@ -812,6 +823,7 @@ Partial Class Game
         '
         Me.lblLetter7.AccessibleName = ""
         Me.lblLetter7.AutoSize = True
+        Me.lblLetter7.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter7.Location = New System.Drawing.Point(367, 300)
         Me.lblLetter7.Name = "lblLetter7"
@@ -907,6 +919,7 @@ Partial Class Game
         '
         Me.lblLetter20.AccessibleName = ""
         Me.lblLetter20.AutoSize = True
+        Me.lblLetter20.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter20.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter20.Location = New System.Drawing.Point(1053, 300)
         Me.lblLetter20.Name = "lblLetter20"
@@ -918,6 +931,7 @@ Partial Class Game
         '
         Me.lblLetter19.AccessibleName = ""
         Me.lblLetter19.AutoSize = True
+        Me.lblLetter19.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter19.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter19.Location = New System.Drawing.Point(1000, 300)
         Me.lblLetter19.Name = "lblLetter19"
@@ -929,6 +943,7 @@ Partial Class Game
         '
         Me.lblLetter18.AccessibleName = ""
         Me.lblLetter18.AutoSize = True
+        Me.lblLetter18.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter18.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter18.Location = New System.Drawing.Point(949, 300)
         Me.lblLetter18.Name = "lblLetter18"
@@ -940,6 +955,7 @@ Partial Class Game
         '
         Me.lblLetter16.AccessibleName = ""
         Me.lblLetter16.AutoSize = True
+        Me.lblLetter16.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter16.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter16.Location = New System.Drawing.Point(845, 300)
         Me.lblLetter16.Name = "lblLetter16"
@@ -951,6 +967,7 @@ Partial Class Game
         '
         Me.lblLetter17.AccessibleName = ""
         Me.lblLetter17.AutoSize = True
+        Me.lblLetter17.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter17.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter17.Location = New System.Drawing.Point(896, 300)
         Me.lblLetter17.Name = "lblLetter17"
@@ -962,6 +979,7 @@ Partial Class Game
         '
         Me.lblLetter15.AccessibleName = ""
         Me.lblLetter15.AutoSize = True
+        Me.lblLetter15.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter15.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter15.Location = New System.Drawing.Point(792, 300)
         Me.lblLetter15.Name = "lblLetter15"
@@ -1001,6 +1019,7 @@ Partial Class Game
         '
         Me.lblLetter14.AccessibleName = ""
         Me.lblLetter14.AutoSize = True
+        Me.lblLetter14.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter14.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter14.Location = New System.Drawing.Point(737, 300)
         Me.lblLetter14.Name = "lblLetter14"
@@ -1012,6 +1031,7 @@ Partial Class Game
         '
         Me.lblLetter13.AccessibleName = ""
         Me.lblLetter13.AutoSize = True
+        Me.lblLetter13.BackColor = System.Drawing.Color.Transparent
         Me.lblLetter13.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetter13.Location = New System.Drawing.Point(684, 300)
         Me.lblLetter13.Name = "lblLetter13"
@@ -1036,7 +1056,7 @@ Partial Class Game
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Hangman.My.Resources.Resources.background
+        Me.BackgroundImage = Global.Hangman.My.Resources.Resources.background1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1350, 613)
         Me.Controls.Add(Me.btnPosition20)

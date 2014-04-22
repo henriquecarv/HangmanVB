@@ -288,6 +288,8 @@ Public Class Game
 
     Private Sub Game_KeyPress(ByVal sender As Object, ByVal e As KeyEventArgs) Handles Me.KeyDown
         Select Case e.KeyCode
+            Case Keys.F1
+                
             Case Keys.A
                 letter = "A"
                 funResult(letter)

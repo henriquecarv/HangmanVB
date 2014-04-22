@@ -146,6 +146,7 @@
     <Content Include="Hangman.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\background.gif" />
     <None Include="Resources\background.jpg" />
     <None Include="Resources\hangman01.gif" />
     <None Include="Resources\Home_Screen.jpg" />
