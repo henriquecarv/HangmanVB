@@ -10,9 +10,11 @@ Public Class Game
     Dim newcount As Integer
     Dim wordss As New List(Of String)
     Dim category As Integer
+	Dim l As Integer
 
     Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
-        End
+        CategoryandDifficult.choosen_word.Clear()
+		End
     End Sub
 
     Private Sub Game_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
@@ -557,11 +559,77 @@ Public Class Game
         Dim countSpace As Integer
         For i = 0 To pWord.Length - 1
             If pWord.Chars(i) = " " Then
+				Display_Space(i + 1)
                 countSpace = countSpace + 1
             End If
         Next
         Return countSpace
     End Function
+	
+	'Displaying the spaces.
+    Private Sub Display_Space(ByVal index As Integer)
+        If index = 1 Then
+            btnPosition1.Visible = False
+            lblLetter1.Visible = False
+        ElseIf index = 2 Then
+            btnPosition2.Visible = False
+            lblLetter2.Visible = False
+        ElseIf index = 3 Then
+            btnPosition3.Visible = False
+            lblLetter3.Visible = False
+        ElseIf index = 4 Then
+            btnPosition4.Visible = False
+            lblLetter4.Visible = False
+        ElseIf index = 5 Then
+            btnPosition5.Visible = False
+            lblLetter5.Visible = False
+        ElseIf index = 6 Then
+            btnPosition6.Visible = False
+            lblLetter6.Visible = False
+        ElseIf index = 7 Then
+            btnPosition7.Visible = False
+            lblLetter7.Visible = False
+        ElseIf index = 8 Then
+            btnPosition8.Visible = False
+            lblLetter8.Visible = False
+        ElseIf index = 9 Then
+            btnPosition9.Visible = False
+            lblLetter9.Visible = False
+        ElseIf index = 10 Then
+            btnPosition10.Visible = False
+            lblLetter10.Visible = False
+        ElseIf index = 11 Then
+            btnPosition11.Visible = False
+            lblLetter11.Visible = False
+        ElseIf index = 12 Then
+            btnPosition12.Visible = False
+            lblLetter12.Visible = False
+        ElseIf index = 13 Then
+            btnPosition13.Visible = False
+            lblLetter13.Visible = False
+        ElseIf index = 14 Then
+            btnPosition14.Visible = False
+            lblLetter14.Visible = False
+        ElseIf index = 15 Then
+            btnPosition15.Visible = False
+            lblLetter15.Visible = False
+        ElseIf index = 16 Then
+            btnPosition16.Visible = False
+            lblLetter16.Visible = False
+        ElseIf index = 17 Then
+            btnPosition17.Visible = False
+            lblLetter17.Visible = False
+        ElseIf index = 18 Then
+            btnPosition18.Visible = False
+            lblLetter18.Visible = False
+        ElseIf index = 19 Then
+            btnPosition19.Visible = False
+            lblLetter19.Visible = False
+        ElseIf index = 20 Then
+            btnPosition20.Visible = False
+            lblLetter20.Visible = False
+        End If
+    End Sub
 
     Private Function Word_Random(ByVal cat_id As Integer) As Integer
         wordss.Clear()
@@ -585,7 +653,8 @@ Public Class Game
     Private Sub cmbCategory_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbCategory.SelectedIndexChanged
 
         Word_Generation()
-
+		
+		Dim c As Integer = count_space(words)
 
         'category = Me.cmbCategory.SelectedIndex
         'Dim number As Integer
@@ -737,18 +806,36 @@ Public Class Game
     End Sub
 
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
-        Me.Close()
+        CategoryandDifficult.choosen_word.Add(words.ToString)
+		Me.Close()
         Main.Hide()
         CategoryandDifficult.Show()
     End Sub
 
     Private Sub Word_Generation()
-        category = cmbCategory.SelectedIndex + 1
-        Dim number As Integer
-        number = Word_Random(category)
-        Dim rand_number As Integer = randy.Next(0, number - 1)
-        words = wordss.Item(rand_number).ToLower
-        TextBox1.Text = words
+        l = CategoryandDifficult.choosen_word.Count
+        'TextBox2.Text = l.ToString
+        If l <> 0 Then
+            '   TextBox2.Text = l
+            For i = 0 To l - 1
+                If words = CategoryandDifficult.choosen_word(i) Then
+
+                Else
+                    category = cmbCategory.SelectedIndex + 1
+                    Dim number As Integer
+                    number = Word_Random(category)
+                    Dim rand_number As Integer = randy.Next(0, number - 1)
+                    words = wordss.Item(rand_number).ToLower
+                End If
+            Next
+        Else
+            category = cmbCategory.SelectedIndex + 1
+            Dim number As Integer
+            number = Word_Random(category)
+            Dim rand_number As Integer = randy.Next(0, number - 1)
+            words = wordss.Item(rand_number).ToLower
+        End If
+        'TextBox1.Text = words
 
         Button_invisible()
 

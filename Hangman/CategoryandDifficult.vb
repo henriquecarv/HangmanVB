@@ -3,6 +3,7 @@
 Public Class CategoryandDifficult
     Dim difficulties = New String() {"Easy", "Medium", "Hard"}
     Public difficult As String
+	Public choosen_word As New List(of String)
 
     Private Sub btnPlay_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPlay.Click
         Me.Hide()
