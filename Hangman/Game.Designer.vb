@@ -45,7 +45,6 @@ Partial Class Game
         Me.btnPosition4 = New System.Windows.Forms.Button()
         Me.btnPosition5 = New System.Windows.Forms.Button()
         Me.btnPosition6 = New System.Windows.Forms.Button()
-        Me.picHangman = New System.Windows.Forms.PictureBox()
         Me.btnM = New System.Windows.Forms.Button()
         Me.btnL = New System.Windows.Forms.Button()
         Me.btnK = New System.Windows.Forms.Button()
@@ -102,6 +101,7 @@ Partial Class Game
         Me.btnPosition13 = New System.Windows.Forms.Button()
         Me.lblLetter14 = New System.Windows.Forms.Label()
         Me.lblLetter13 = New System.Windows.Forms.Label()
+        Me.picHangman = New System.Windows.Forms.PictureBox()
         CType(Me.picHangman, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -130,6 +130,7 @@ Partial Class Game
         '
         Me.lblWrongGuesses.AccessibleName = "lblWordsGuessed"
         Me.lblWrongGuesses.AutoSize = True
+        Me.lblWrongGuesses.BackColor = System.Drawing.Color.Transparent
         Me.lblWrongGuesses.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWrongGuesses.Location = New System.Drawing.Point(1118, 238)
         Me.lblWrongGuesses.Name = "lblWrongGuesses"
@@ -141,6 +142,7 @@ Partial Class Game
         '
         Me.lblLetters.AccessibleName = "lblLetters"
         Me.lblLetters.AutoSize = True
+        Me.lblLetters.BackColor = System.Drawing.Color.Transparent
         Me.lblLetters.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLetters.Location = New System.Drawing.Point(32, 391)
         Me.lblLetters.Name = "lblLetters"
@@ -152,6 +154,7 @@ Partial Class Game
         '
         Me.lblDifficult.AccessibleName = "lblDifficult"
         Me.lblDifficult.AutoSize = True
+        Me.lblDifficult.BackColor = System.Drawing.Color.Transparent
         Me.lblDifficult.Location = New System.Drawing.Point(1120, 34)
         Me.lblDifficult.Name = "lblDifficult"
         Me.lblDifficult.Size = New System.Drawing.Size(69, 17)
@@ -184,6 +187,7 @@ Partial Class Game
         '
         Me.lblCategory.AccessibleName = "lblCategory"
         Me.lblCategory.AutoSize = True
+        Me.lblCategory.BackColor = System.Drawing.Color.Transparent
         Me.lblCategory.Location = New System.Drawing.Point(1120, 94)
         Me.lblCategory.Name = "lblCategory"
         Me.lblCategory.Size = New System.Drawing.Size(69, 17)
@@ -357,18 +361,6 @@ Partial Class Game
         Me.btnPosition6.Text = "Button34"
         Me.btnPosition6.UseVisualStyleBackColor = True
         Me.btnPosition6.Visible = False
-        '
-        'picHangman
-        '
-        Me.picHangman.AccessibleName = ""
-        Me.picHangman.Image = Global.Hangman.My.Resources.Resources.hangman0
-        Me.picHangman.Location = New System.Drawing.Point(36, 25)
-        Me.picHangman.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.picHangman.Name = "picHangman"
-        Me.picHangman.Size = New System.Drawing.Size(964, 238)
-        Me.picHangman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picHangman.TabIndex = 55
-        Me.picHangman.TabStop = False
         '
         'btnM
         '
@@ -648,6 +640,7 @@ Partial Class Game
         'lblRemaining
         '
         Me.lblRemaining.AutoSize = True
+        Me.lblRemaining.BackColor = System.Drawing.Color.Transparent
         Me.lblRemaining.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRemaining.Location = New System.Drawing.Point(1119, 172)
         Me.lblRemaining.Name = "lblRemaining"
@@ -658,6 +651,7 @@ Partial Class Game
         'lblCountRem
         '
         Me.lblCountRem.AutoSize = True
+        Me.lblCountRem.BackColor = System.Drawing.Color.Transparent
         Me.lblCountRem.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCountRem.ForeColor = System.Drawing.Color.Red
         Me.lblCountRem.Location = New System.Drawing.Point(1301, 168)
@@ -1025,10 +1019,25 @@ Partial Class Game
         Me.lblLetter13.TabIndex = 96
         Me.lblLetter13.Visible = False
         '
+        'picHangman
+        '
+        Me.picHangman.AccessibleName = ""
+        Me.picHangman.BackColor = System.Drawing.Color.Transparent
+        Me.picHangman.Image = Global.Hangman.My.Resources.Resources.hangman0
+        Me.picHangman.Location = New System.Drawing.Point(36, 25)
+        Me.picHangman.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.picHangman.Name = "picHangman"
+        Me.picHangman.Size = New System.Drawing.Size(964, 238)
+        Me.picHangman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picHangman.TabIndex = 55
+        Me.picHangman.TabStop = False
+        '
         'Game
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Hangman.My.Resources.Resources.background
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1350, 613)
         Me.Controls.Add(Me.btnPosition20)
         Me.Controls.Add(Me.btnPosition19)

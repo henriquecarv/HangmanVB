@@ -24,16 +24,17 @@ Partial Class Main
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.btnStart = New System.Windows.Forms.Button()
         Me.lblWelcome = New System.Windows.Forms.Label()
         Me.txtInstructions = New System.Windows.Forms.TextBox()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnStart = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTitle
         '
         Me.lblTitle.AccessibleName = "lblTitle"
         Me.lblTitle.AutoSize = True
+        Me.lblTitle.BackColor = System.Drawing.Color.Transparent
         Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.Location = New System.Drawing.Point(240, 30)
         Me.lblTitle.Name = "lblTitle"
@@ -41,22 +42,11 @@ Partial Class Main
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Hangman"
         '
-        'btnStart
-        '
-        Me.btnStart.AccessibleName = "btnStart"
-        Me.btnStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnStart.Location = New System.Drawing.Point(493, 299)
-        Me.btnStart.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(107, 43)
-        Me.btnStart.TabIndex = 1
-        Me.btnStart.Text = "Start"
-        Me.btnStart.UseVisualStyleBackColor = True
-        '
         'lblWelcome
         '
         Me.lblWelcome.AccessibleName = "lblWelcome"
         Me.lblWelcome.AutoSize = True
+        Me.lblWelcome.BackColor = System.Drawing.Color.Transparent
         Me.lblWelcome.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWelcome.Location = New System.Drawing.Point(172, 169)
         Me.lblWelcome.Name = "lblWelcome"
@@ -78,7 +68,7 @@ Partial Class Main
         'btnExit
         '
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(493, 215)
+        Me.btnExit.Location = New System.Drawing.Point(496, 273)
         Me.btnExit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(107, 46)
@@ -86,11 +76,24 @@ Partial Class Main
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'btnStart
+        '
+        Me.btnStart.AccessibleName = "btnStart"
+        Me.btnStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStart.Location = New System.Drawing.Point(496, 357)
+        Me.btnStart.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(107, 43)
+        Me.btnStart.TabIndex = 1
+        Me.btnStart.Text = "Start"
+        Me.btnStart.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AccessibleName = "formMain"
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(641, 476)
         Me.Controls.Add(Me.btnExit)
@@ -108,9 +111,9 @@ Partial Class Main
 
     End Sub
     Friend WithEvents lblTitle As System.Windows.Forms.Label
-    Friend WithEvents btnStart As System.Windows.Forms.Button
     Friend WithEvents lblWelcome As System.Windows.Forms.Label
     Friend WithEvents txtInstructions As System.Windows.Forms.TextBox
     Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents btnStart As System.Windows.Forms.Button
 
 End Class

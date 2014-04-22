@@ -34,7 +34,7 @@ Partial Class CategoryandDifficult
         '
         Me.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbCategory.FormattingEnabled = True
-        Me.cmbCategory.Location = New System.Drawing.Point(200, 96)
+        Me.cmbCategory.Location = New System.Drawing.Point(182, 88)
         Me.cmbCategory.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbCategory.Name = "cmbCategory"
         Me.cmbCategory.Size = New System.Drawing.Size(137, 24)
@@ -44,7 +44,7 @@ Partial Class CategoryandDifficult
         '
         Me.cmbDifficult.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbDifficult.FormattingEnabled = True
-        Me.cmbDifficult.Location = New System.Drawing.Point(200, 209)
+        Me.cmbDifficult.Location = New System.Drawing.Point(182, 201)
         Me.cmbDifficult.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbDifficult.Name = "cmbDifficult"
         Me.cmbDifficult.Size = New System.Drawing.Size(137, 24)
@@ -53,8 +53,9 @@ Partial Class CategoryandDifficult
         'lblCategory
         '
         Me.lblCategory.AutoSize = True
+        Me.lblCategory.BackColor = System.Drawing.Color.Transparent
         Me.lblCategory.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCategory.Location = New System.Drawing.Point(215, 69)
+        Me.lblCategory.Location = New System.Drawing.Point(207, 61)
         Me.lblCategory.Name = "lblCategory"
         Me.lblCategory.Size = New System.Drawing.Size(92, 25)
         Me.lblCategory.TabIndex = 2
@@ -63,8 +64,9 @@ Partial Class CategoryandDifficult
         'lblDifficult
         '
         Me.lblDifficult.AutoSize = True
+        Me.lblDifficult.BackColor = System.Drawing.Color.Transparent
         Me.lblDifficult.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDifficult.Location = New System.Drawing.Point(215, 182)
+        Me.lblDifficult.Location = New System.Drawing.Point(207, 174)
         Me.lblDifficult.Name = "lblDifficult"
         Me.lblDifficult.Size = New System.Drawing.Size(84, 25)
         Me.lblDifficult.TabIndex = 3
@@ -73,7 +75,7 @@ Partial Class CategoryandDifficult
         'btnPlay
         '
         Me.btnPlay.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPlay.Location = New System.Drawing.Point(211, 295)
+        Me.btnPlay.Location = New System.Drawing.Point(204, 284)
         Me.btnPlay.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnPlay.Name = "btnPlay"
         Me.btnPlay.Size = New System.Drawing.Size(87, 39)
@@ -85,6 +87,8 @@ Partial Class CategoryandDifficult
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Hangman.My.Resources.Resources.background
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(513, 380)
         Me.Controls.Add(Me.btnPlay)
         Me.Controls.Add(Me.lblDifficult)
