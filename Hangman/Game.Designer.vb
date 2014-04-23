@@ -1138,9 +1138,11 @@ Partial Class Game
         Me.Controls.Add(Me.lblWrongGuesses)
         Me.Controls.Add(Me.txtWrongGuesses)
         Me.Controls.Add(Me.btnA)
+        Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MaximizeBox = False
         Me.Name = "Game"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Game"

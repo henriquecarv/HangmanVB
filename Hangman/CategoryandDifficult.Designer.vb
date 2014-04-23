@@ -95,8 +95,11 @@ Partial Class CategoryandDifficult
         Me.Controls.Add(Me.lblCategory)
         Me.Controls.Add(Me.cmbDifficult)
         Me.Controls.Add(Me.cmbCategory)
+        Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MaximizeBox = False
         Me.Name = "CategoryandDifficult"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Category & Difficult"

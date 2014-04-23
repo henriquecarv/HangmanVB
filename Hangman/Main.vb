@@ -16,4 +16,11 @@
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.MaximizeBox = False
     End Sub
+
+    Private Sub Main_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        Select Case e.KeyCode
+            Case Keys.F1
+                Help_Game.Show()
+        End Select
+    End Sub
 End Class

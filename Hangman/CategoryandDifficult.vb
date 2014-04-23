@@ -40,4 +40,10 @@ Public Class CategoryandDifficult
         cmbDifficult.DataSource = difficulties
     End Sub
 
+    Private Sub CategoryandDifficult_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        Select Case e.KeyCode
+            Case Keys.F1
+                Help_Game.Show()
+        End Select
+    End Sub
 End Class

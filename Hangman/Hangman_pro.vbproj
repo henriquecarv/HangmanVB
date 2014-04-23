@@ -117,6 +117,12 @@
     <Compile Include="Game.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Help_Game.Designer.vb">
+      <DependentUpon>Help_Game.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help_Game.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Main.Designer.vb">
       <DependentUpon>Main.vb</DependentUpon>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help_Game.resx">
+      <DependentUpon>Help_Game.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
@@ -175,6 +184,7 @@
     <Content Include="Hangman.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Hangman-Game-grey.ico" />
     <None Include="Resources\background.gif" />
     <None Include="Resources\hangman01.gif" />
     <None Include="Resources\Home_Screen.jpg" />
