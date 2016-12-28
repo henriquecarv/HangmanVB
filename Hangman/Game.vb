@@ -10,11 +10,11 @@ Public Class Game
     Dim newcount As Integer
     Dim wordss As New List(Of String)
     Dim category As Integer
-	Dim l As Integer
+    Dim l As Integer
 
     Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
         CategoryandDifficult.choosen_word.Clear()
-		End
+        End
     End Sub
 
     Private Sub Game_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
@@ -41,10 +41,7 @@ Public Class Game
         cmbCategory.SelectedIndex = CategoryandDifficult.cmbCategory.SelectedIndex
         cmbDifficult.SelectedIndex = CategoryandDifficult.cmbDifficult.SelectedIndex
 
-
-
         Difficulty_Selection()
-
 
         'category = CategoryandDifficult.cmbCategory.SelectedIndex + 1
         'Dim number As Integer
@@ -56,7 +53,6 @@ Public Class Game
         '    If words.
         'Next Then
 
-
         'words = apple
 
         '        cmbCategory.Text = CategoryandDifficult.cmbCategory.Text
@@ -64,7 +60,6 @@ Public Class Game
 
         Word_Generation()
 
-        
         If newcount_difficulty = 6 Then
             picHangman.Image = My.Resources.hangman2
         ElseIf newcount_difficulty = 4 Then
@@ -79,7 +74,6 @@ Public Class Game
 
         cmbCategory.Enabled = False
         cmbDifficult.Enabled = False
-
 
         Dim count As Integer
         Dim result As Boolean = True
@@ -215,7 +209,6 @@ Public Class Game
                                 Me.Close()
                                 Main.Show()
                         End Select
-
 
                     End If
                 End If
@@ -559,14 +552,14 @@ Public Class Game
         Dim countSpace As Integer
         For i = 0 To pWord.Length - 1
             If pWord.Chars(i) = " " Then
-				Display_Space(i + 1)
+                Display_Space(i + 1)
                 countSpace = countSpace + 1
             End If
         Next
         Return countSpace
     End Function
-	
-	'Displaying the spaces.
+
+    'Displaying the spaces.
     Private Sub Display_Space(ByVal index As Integer)
         If index = 1 Then
             btnPosition1.Visible = False
@@ -653,8 +646,8 @@ Public Class Game
     Private Sub cmbCategory_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbCategory.SelectedIndexChanged
 
         Word_Generation()
-		
-		Dim c As Integer = count_space(words)
+
+        Dim c As Integer = count_space(words)
 
         'category = Me.cmbCategory.SelectedIndex
         'Dim number As Integer
@@ -807,7 +800,7 @@ Public Class Game
 
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
         CategoryandDifficult.choosen_word.Add(words.ToString)
-		Me.Close()
+        Me.Close()
         Main.Hide()
         CategoryandDifficult.Show()
     End Sub
